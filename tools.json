@@ -1,0 +1,5688 @@
+{
+  "table": "tools",
+  "columns": [
+    {
+      "Field": "id",
+      "Type": "int",
+      "Null": "NO",
+      "Key": "PRI",
+      "Default": null,
+      "Extra": "auto_increment"
+    },
+    {
+      "Field": "name",
+      "Type": "varchar(255)",
+      "Null": "NO",
+      "Key": "MUL",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "category",
+      "Type": "varchar(128)",
+      "Null": "YES",
+      "Key": "",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "unitPrice",
+      "Type": "decimal(10,2)",
+      "Null": "YES",
+      "Key": "",
+      "Default": "0",
+      "Extra": ""
+    },
+    {
+      "Field": "description",
+      "Type": "text",
+      "Null": "YES",
+      "Key": "",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "createdAt",
+      "Type": "timestamp",
+      "Null": "NO",
+      "Key": "",
+      "Default": "CURRENT_TIMESTAMP",
+      "Extra": ""
+    },
+    {
+      "Field": "updatedAt",
+      "Type": "timestamp",
+      "Null": "NO",
+      "Key": "",
+      "Default": "CURRENT_TIMESTAMP",
+      "Extra": "DEFAULT_GENERATED on update CURRENT_TIMESTAMP"
+    }
+  ],
+  "rows": [
+    {
+      "id": 1,
+      "name": "180 x 4,4 - 5,6/3,5 x 45 T= 36 Con.",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 2,
+      "name": "350 x 4,4/3,2 x 60 T= 72 TFF 2/14/100 Holzma",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 3,
+      "name": "Z3+3 Compressed spiral router bit D10x22x70 Z3+3",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 4,
+      "name": "PCD nesting router bit D=12 UL=25 G=12",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 5,
+      "name": "120x60 d=35 Z4+4",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 6,
+      "name": "D108 B50 mec.",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 7,
+      "name": "D140 B8-16",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 8,
+      "name": "D140 B15-30",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 9,
+      "name": "D=122, B=100",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 10,
+      "name": "PCD cutter per linear mm inserts (Qty 24) Z? (per invoice)",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 11,
+      "name": "PCD router bit per linear mm Z2+2 C1867_0018_AH20",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 12,
+      "name": "PCD router bit per linear mm Z1+1 091266 Y36",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 13,
+      "name": "Screw for pre-milling cutter head",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 14,
+      "name": "Diamond Grooving Blade D100 t=3.2 B=30 Z20",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 15,
+      "name": "PCD cutter per linear mm Z18x11.2 DX (15% discount applied)",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 16,
+      "name": "PCD cutter per linear mm Z18x11.2 SX (15% discount applied)",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 17,
+      "name": "PCD sawblade per linear mm Ref 111025 (10% discount applied)",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 18,
+      "name": "PCD scoring blade per linear mm Ref SSB 0616356 (10% discount applied)",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 19,
+      "name": "PCD sawblade per linear mm Ref 121025 (10% discount applied)",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 20,
+      "name": "PCD scoring blade per linear mm Ref 101025 (10% discount applied)",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 21,
+      "name": "PCD cutter per linear mm Z12x14 + Z6x7 DX (10% discount applied)",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 22,
+      "name": "PCD cutter per linear mm Z12x14 + Z6x7 SX (10% discount applied)",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 23,
+      "name": "PCD router bit per linear mm Z3+3 nesting bit (10% discount applied)",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 24,
+      "name": "PCD router bit per linear mm Z1 (10% discount applied)",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 25,
+      "name": "diamond saw blade D=320 t=4.4 B=65 Z=72 triple ship",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 26,
+      "name": "diamond scoring saw blade D=200 t=4.3/5.5 B=45 Z=36 conical",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 27,
+      "name": "diamond scoring saw blade D=200 t=4.3/5.5 B=65 Z=36 conical",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 28,
+      "name": "Positive integral spiral router bit D10x52 Z3",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 29,
+      "name": "Positive integral spiral router bit with chip breaker D12x52 Z3 RT",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 30,
+      "name": "T20 Screw for pre-milling cutter head",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 31,
+      "name": "PCD cutter per linear mm Z14x11.2 DX",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 32,
+      "name": "PCD cutter per linear mm Z14x11.2 SX",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 33,
+      "name": "PCD sawblade per linear mm 350 4.4 Z84 (0411251)",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 34,
+      "name": "PCD sawblade per linear mm 300 3.2 Z72 (1845)",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 35,
+      "name": "PCD sawblade per linear mm 300 3.2 Z72 (9034)",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 36,
+      "name": "PCD sawblade per linear mm 300 3.2 Z72 (0323119)",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 37,
+      "name": "PCD sawblade per linear mm 300 3.2 Z72 (070325)",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 38,
+      "name": "PCD sawblade per linear mm 300 3.2 Z72 (0124003)",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 39,
+      "name": "diamond scoring blade D=200 t=4.3/5.5 B=45 Z=36 Conical",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 40,
+      "name": "diamond saw blade D=380 t=4.4 B=60 + 2(10/100) + 2(13/105) Z=72",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 41,
+      "name": "diamond saw blade TRF D=300 B=32 d=30 +2(7/42)+2(9/46,4)+2(10/60) Z=96",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 42,
+      "name": "PCD sawblade per linear mm 30032z72 (197242)",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 43,
+      "name": "PCD sawblade per linear mm 30032z72 (0323118)",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 44,
+      "name": "PCD router bit per linear mm DPR 754",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 45,
+      "name": "D58x27G20 Z1 Mechanical router for chamfering",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 46,
+      "name": "Z3x52",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 47,
+      "name": "Z3x90 RT",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 48,
+      "name": "Z3x56",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 49,
+      "name": "Z3x42",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 50,
+      "name": "Z3x62",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 51,
+      "name": "Negative integral spiral router bit D8x22 Z2",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 52,
+      "name": "diamond router bit D=10 UL=20 G=10 Z2 Carbide Body",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 53,
+      "name": "TRF diamond saw blade D=320, t=4.4, B=65 Z=72 triple ship",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 54,
+      "name": "CON diamond scoring saw blade D=200, t=4.3/5.5, B=65 Z=36 conical",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 55,
+      "name": "Z3+3 diamond brazed cutter head 30Deg. d=30+2 Z3+3",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 56,
+      "name": "PCD sawblade sharpening per linear mm Z72x4.8",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 57,
+      "name": "PCD scoring blade sharpening per linear mm Z36x4.8",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 58,
+      "name": "PCD sawblade sharpening per linear mm 380x4.8 Z72 (1411251)",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 59,
+      "name": "PCD sawblade sharpening per linear mm 380x4.8 Z72 (1411252)",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 60,
+      "name": "PCD sawblade sharpening per linear mm 380x4.8 Z72 (1411253)",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 61,
+      "name": "PCD sawblade sharpening per linear mm 380x4.8 Z72 (1411254)",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 62,
+      "name": "PCD sawblade sharpening per linear mm 380x4.8 Z72 (1411255)",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 63,
+      "name": "PCD sawblade sharpening per linear mm 380x4.8 Z72 (1411256)",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 64,
+      "name": "PCD sawblade sharpening per linear mm 380x4.8 Z72 (1411257)",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 65,
+      "name": "PCD scoring blade sharpening per linear mm 180x4.7 Z36 (1411258)",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 66,
+      "name": "PCD scoring blade sharpening per linear mm 180x4.7 Z36 (1411259)",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 67,
+      "name": "PCD scoring blade sharpening per linear mm 180x4.7 Z36 (14112510)",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 68,
+      "name": "PCD scoring blade sharpening per linear mm 200x4.4 Z36 (14112511)",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 69,
+      "name": "PCD cutter sharpening per linear mm DSC66",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 70,
+      "name": "PCD cutter sharpening per linear mm DSC65",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 71,
+      "name": "diamond Grooving Blade D100 B=3.2 d=30 Z20",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 72,
+      "name": "PCD sawblade sharpening per linear mm Z20x3.2",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 73,
+      "name": "RT RDN Negative integral spiral router bit with chip breaker right D12x52 Z3",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 74,
+      "name": "RT RDN Negative integral spiral router bit with chip breaker right D10x52 Z3",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 75,
+      "name": "RT RSN Negative integral spiral router bit with chip breaker left D12x52 Z3",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 76,
+      "name": "120 RT RDN Negative integral spiral router bit with chip breaker right D12x52 Z3",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 77,
+      "name": "60 TCT V-groove router bit D10 G6 60Deg.",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 78,
+      "name": "diamond saw blade D=310 B=4.4 d=60 Z=72",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 79,
+      "name": "diamond scoring blade D=200 B=4.3/5.5 d=65 Z=36",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 80,
+      "name": "diamond D100 B=3.2 d=30 Z20",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 81,
+      "name": "cutter sharpening PCD cutter per linear mm DSC66",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 82,
+      "name": "cutter sharpening PCD cutter per linear mm Z24x6.5",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 83,
+      "name": "RDN Negative spiral integral spiral router bit D12x32 Z2",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 84,
+      "name": "router bits 10mmx4.5 Z3 QTY 19",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 85,
+      "name": "router bits 12mmx4.6 Z3 QTY 3",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 86,
+      "name": "router bits 8mmx3.8 Z3 QTY 3",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 87,
+      "name": "D=70 B=62 d=30+2 Z2+2 Aluminum Mec.",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 88,
+      "name": "cutter sharpening PCD cutter per linear mm Z14x18 DX",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 89,
+      "name": "cutter sharpening PCD cutter per linear mm Z14x18 SX",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 90,
+      "name": "DX TCT dowel drills D5x70",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 91,
+      "name": "DX TCT dowel drills D8x70",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 92,
+      "name": "SX TCT dowel drills D8x70",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 93,
+      "name": "DX TCT dowel drills D10x70",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 94,
+      "name": "SX TCT dowel drills D10x70",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 95,
+      "name": "DX Hinges boring bits D15x70",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 96,
+      "name": "SX Hinges boring bits D15x70",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 97,
+      "name": "DX Hinges boring bits D20x70",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 98,
+      "name": "DX Hinges boring bits D35x70",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 99,
+      "name": "RDP Positive integral spiral router bit D6x22 Z2",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 100,
+      "name": "RDP Positive integral spiral router bit D8x22 Z2",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 101,
+      "name": "RDP Positive integral spiral router bit D10x32 Z2",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 102,
+      "name": "RDP Positive integral spiral router bit D12x32 Z2",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 103,
+      "name": "cutter sharpening PCD cutter per linear mm Z9x17.2 DX",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 104,
+      "name": "cutter sharpening PCD cutter per linear mm Z9x17.2 SX",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 105,
+      "name": "400 x 4,4/3,2 x 75 T= 72 TFF 4/15/105 Giben",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 106,
+      "name": "TCT Panel Sizing Saw Blade 300x3,2/2,2x30 T=96 TC pos. Com PH",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 107,
+      "name": "RDP Positive integral spiral router bit with chip breaker D10x32 Z3",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 108,
+      "name": "cutter sharpening PCD cutter per linear mm DSC65",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 109,
+      "name": "cutter sharpening PCD cutter per linear mm Z14x11.2 DX",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 110,
+      "name": "cutter sharpening PCD cutter per linear mm Z14x11.2 SX",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 111,
+      "name": "cutter sharpening PCD cutter per linear mm Z12x9.9 DX",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 112,
+      "name": "cutter sharpening PCD cutter per linear mm Z12x9.9 SX",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 113,
+      "name": "sawblade sharpening PCD sawblade per linear mm Z96x3.2",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 114,
+      "name": "Z3+3 compressed nesting router bit D=10 UL=22 Z3+3",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 115,
+      "name": "350 x 4,4/3,2 x 80 Z= 72 TFF Gabbiani",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 116,
+      "name": "scoring blade sharpening PCD scoring blade per Z24x5",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 117,
+      "name": "200 x 4,4 - 5,4/3,2 x 80 T= 72 CON",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 118,
+      "name": "RDP Positive integral spiral router bit D8x32 Z2",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 119,
+      "name": "TCT Rip Saw Blade 350x3,5/2,5x30 T=32 ATB AKB",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 120,
+      "name": "D8-7 precision collet D8-7 ER32",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 121,
+      "name": "D9-10 precision collet D9-10 ER32",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 122,
+      "name": "TCT Saw Blade 250x3,2/2,2x30 T=80 ATB Combi PH",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 123,
+      "name": "diamond router bit D=18 UL=48 G=20 Z2+2",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 124,
+      "name": "diamond router bit D=10 UL=15 G=10 Z2 Neg Carbide Body",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 125,
+      "name": "G12 diamond router bit D=10 UL=20 G=12 Z2",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 126,
+      "name": "router sharpening PCD router bit per linear mm Z2x20",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 127,
+      "name": "router sharpening PCD router bit per linear mm Z2x15",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 128,
+      "name": "router sharpening PCD router bit per linear mm Z14x12",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 129,
+      "name": "350 x 4,4/3,2 x 80 Z= 72 TFF NL 4/9/100+2/9/110+2/14/110",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 130,
+      "name": "200 x 4,4 - 5,4/3,2 x 80 T= 72 CON Gabbiani",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 131,
+      "name": "TCT Circular Saw Blade 300x3,2/2,2x30 T=96 ATB Com PH",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 132,
+      "name": "TCT Circular Saw Blade 350x3,5/2,5x30 T=84 ATB",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 133,
+      "name": "sawblade sharpening PCD sawblade per linear Z72x3.2",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 134,
+      "name": "sawblade sharpening PCD sawblade per linear Z72x3.2 (241022)",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 135,
+      "name": "sawblade sharpening PCD sawblade per linear Z54x2.2",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 136,
+      "name": "router sharpening PCD router bit per linear mm DRP745",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 137,
+      "name": "router sharpening PCD router bit per linear mm DSR10",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 138,
+      "name": "diamond router bit Mono D5x10 G5 Z1 Neg Carbide Body",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 139,
+      "name": "RDN Negative integral spiral router bit D3x12 Z2",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 140,
+      "name": "RDP Positive integral spiral router bit D12x42 Z2",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 141,
+      "name": "RDN Negative integral spiral router bit D4x12 Z2",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 142,
+      "name": "RDN Negative integral spiral router bit D6x22 Z2",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 143,
+      "name": "SX TCT dowel drills D5x70",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 144,
+      "name": "DX TCT dowel drills D6x70",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 145,
+      "name": "SX TCT dowel drills D6x70",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 146,
+      "name": "DX TCT through hole drills D5x70",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 147,
+      "name": "DX TCT through hole drills D6x70",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 148,
+      "name": "SX Hinges boring bits D20x70",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 149,
+      "name": "SX Hinges boring bits D35x70",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 150,
+      "name": "ER32 Tool holder For HSK63F ER32",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 151,
+      "name": "D3-2 precision collet D3-2 ER32",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 152,
+      "name": "D6-5 precision collet D6-5 ER32",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 153,
+      "name": "sawblade sharpening PCD sawblade per linear mm Z72x4.8",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 154,
+      "name": "scoring blade sharpening PCD scoring blade per linear mm Z36x4.8",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 155,
+      "name": "key Standard key nut for ER32",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 156,
+      "name": "EC8065-30 Z3+3 diamond brazed cutter head 30Deg. d=30+2 Z3+3",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 157,
+      "name": "09-EC2HPN815 diamond router bit D=8 UL=15 G=8 Z2 Pos/Neg Carbide Body",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 158,
+      "name": "sh-dia cutter sharpening PCD cutter per linear mm Z12x14 DX 168",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 159,
+      "name": "sh-dia cutter sharpening PCD cutter per linear mm Z12x14 SX 168",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 160,
+      "name": "D3-G6",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 161,
+      "name": "Tungsten-carbide-indexable-inserts",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 162,
+      "name": "Tungsten-carbide-indexable-100-inserts",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 163,
+      "name": "Tungsten-carbide-knives-for-100-portable-planers",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 164,
+      "name": "Tungsten-carbide-indexable-100",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 165,
+      "name": "Tungsten-carbide-knives-for-50",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 166,
+      "name": "Tungsten-carbide-knives-for-50-portable-planers",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 167,
+      "name": "TCT-Rip-Saw-Blade-4-220.00-350x3,5/2,5x30-T=32-ATB-AKB",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 168,
+      "name": "Z2",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 169,
+      "name": "D6-5-precision-collet-D6-5-ER25",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 170,
+      "name": "cutter-sharpening-PCD-cutter-per-linear-mm-Z14x12",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 171,
+      "name": "Z3+3",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 172,
+      "name": "200-x-4,4---5,4/3,2-x-45-T=-72-CON-Homag",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 173,
+      "name": "380-x-4,4/3,2-x-60-Z=-72-TFF-NL-2/14/100",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 174,
+      "name": "cutter-sharpening-PCD-cutter-per-linear-mm-Z12x9.9-DX",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 175,
+      "name": "cutter-sharpening-PCD-cutter-per-linear-mm-Z12x9.9-SX",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 176,
+      "name": "cutter-sharpening-PCD-cutter-per-linear-mm-Z12x14-DX",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 177,
+      "name": "cutter-sharpening-PCD-cutter-per-linear-mm-Z12x14-SX",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 178,
+      "name": "sawblade-sharpening-PCD-sawblade-per-linear-mm-Z72x3.2",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 179,
+      "name": "400-x-4,4/3,2-x-75-T=-72-TFF-4/15/105-Giben",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 180,
+      "name": "200-x-4,4---5,4/3,2-x-50-T=-36-con.ATB,-PH-2/8/80",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 181,
+      "name": "sawblade-sharpening-PCD-sawblade-per-linear-mm-Z20*3.2",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 182,
+      "name": "DX-TCT-dowel-drills-D8x70",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 183,
+      "name": "SX-TCT-dowel-drills-D8x70",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 184,
+      "name": "DX-Hinges-boring-bits-D15x70",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 185,
+      "name": "SX-Hinges-boring-bits-D15x70",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 186,
+      "name": "SX-Hinges-boring-bits-D35x70",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 187,
+      "name": "RDP-Positive-integral-spiral-D10x42-Z2-router-bit",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 188,
+      "name": "RDN-Negative-integral-spiral-router-D6x22-Z2-bit",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 189,
+      "name": "RDP-Positive-integral-spiral-router-D8x42-Z2-bit",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 190,
+      "name": "TCT-Circular-Saw-Blade-300x3,2/2,2x30-T=96-ATB-Com-PH",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 191,
+      "name": "RDN-Negative-integral-spiral-router-bit-D3x12-Z2",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 192,
+      "name": "Z2+2",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 193,
+      "name": "ER32-Tool-holder-For-HSK63F-ER32",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 194,
+      "name": "D4-3-precision-collet-D4-3-ER32",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 195,
+      "name": "D6-5-precision-collet-D6-5-ER32",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 196,
+      "name": "D8-7-precision-collet-D8-7-ER32",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 197,
+      "name": "D9-10-precision-collet-D9-10-ER32",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 198,
+      "name": "D11-12-precision-collet-D11-12-ER32",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 199,
+      "name": "D16-precision-collet-D16-ER32",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 200,
+      "name": "D20-precision-collet-D20-ER32",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:58.000Z",
+      "updatedAt": "2026-09-17T11:48:58.000Z"
+    },
+    {
+      "id": 201,
+      "name": "D5x70",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 202,
+      "name": "D6x70",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 203,
+      "name": "D8x70",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 204,
+      "name": "D10x70",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 205,
+      "name": "D15x70",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 206,
+      "name": "D35x70",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 207,
+      "name": "Z3+1",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 208,
+      "name": "diamond-profiled-router-bit-D=40-B=22-UL=22mm-90-Deg.",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 209,
+      "name": "Z2-Neg-Carbide-Body",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 210,
+      "name": "D6x12-G6-Z1-Neg-Carbide-Body",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 211,
+      "name": "D5x10-G5-Z1-Neg-Carbide-Body",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 212,
+      "name": "ALU-Mec.-aluminum-cutter-ECO-D=100-B=6.5-d=30+2-Z=3+3-30deg",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 213,
+      "name": "D10x57.5",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 214,
+      "name": "ER40-Tool-holder-For-HSK63F-ER40",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 215,
+      "name": "D3-2-precision-collet-D3-2-ER40",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 216,
+      "name": "D4-3-precision-collet-D4-3-ER40",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 217,
+      "name": "D6-5-precision-collet-D6-5-ER40",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 218,
+      "name": "D8-7-precision-collet-D8-7-ER40",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 219,
+      "name": "D9-10-precision-collet-D9-10-ER40",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 220,
+      "name": "D11-12-precision-collet-D11-12-ER40",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 221,
+      "name": "D8x57.5",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 222,
+      "name": "D50.8-H15-S12",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 223,
+      "name": "router-sharpening-PCD-router-bit-per-linear-mm-Z8x10",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 224,
+      "name": "router-sharpening-PCD-router-bit-per-linear-mm-Z3x12",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 225,
+      "name": "router-sharpening-PCD-router-bit-per-linear-mm-Z2x12",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 226,
+      "name": "D50.8-H28.5-S12-R25.4",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 227,
+      "name": "300x3,2/2,2x30-T=96-ATB-Com-PH",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 228,
+      "name": "sawblade-sharpening-PCD-sawblade-per-linear-mm-Z24x5",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 229,
+      "name": "D16x40-Z3-RT",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 230,
+      "name": "Z2-Pos/Neg-Carbide-Body",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 231,
+      "name": "D4x57",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 232,
+      "name": "diamond-saw-blade-D=320-B=4.4-d=60-+-2(14/100)-Z=60",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 233,
+      "name": "diamond-scoring-blade-D=200-B=4.3/5.5-d=45-Z=36-Conical",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 234,
+      "name": "350-x-4,4/3,2-x-60-T=-72-TFF-2/14/100-Holzma",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 235,
+      "name": "D38.1-H20.63-S12-R5.96",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 236,
+      "name": "D12.7-H63.5-S12",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 237,
+      "name": "350x3,5/2,5x30-T=32-ATB-AKB",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 238,
+      "name": "250x3,2/2,2x30-T=80-ATB-Combi-PH",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 239,
+      "name": "Martin-Beam-saw-blade-for-Gabbiani-350-x-4,4/3,2-x-80-Z=-72-TFF-NL",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 240,
+      "name": "Martin-Scoring-blade-for-Gabbiani-200-x-4,4---5,4/3,2-x-80-T=-72-CON",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 241,
+      "name": "cutter-sharpening-PCD-cutter-per-linear-mm-Z18x12-DX",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 242,
+      "name": "cutter-sharpening-PCD-cutter-per-linear-mm-Z18x12-SX",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 243,
+      "name": "200-x-4,4---5,4/3,2-x-45-T=-36-CON-Homag",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 244,
+      "name": "Martin-beam-saw-blade-350-x-4,4/3,2-x-30-T=-72-TFF",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 245,
+      "name": "Martin-beam-saw-scoring-blade-180-x-4,4---5,4/3,2-x-30-T=-36-Con.",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 246,
+      "name": "diamond-Grooving-Blade-D100-B=3.2-d=30-Z20",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 247,
+      "name": "cutter-sharpening-PCD-cutter-per-linear-mm-Holzher-premilling-sharpening-Z18x10-DX",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 248,
+      "name": "cutter-sharpening-PCD-cutter-per-linear-mm-Holzher-premilling-sharpening-Z18x10SX",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 249,
+      "name": "router-sharpening-PCD-router-bit-per-linear-mm-Z5x11",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 250,
+      "name": "150x3.2x55-+4-Z36-Right",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 251,
+      "name": "150x3.2x55-+4-Z36-Left",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 252,
+      "name": "shipping",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 253,
+      "name": "320-x-4,4/3,2-x-65-T=-72-TFF-2/9/110-Selco",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 254,
+      "name": "200-x-4,4---5,4/3,2-x-65-T=-36-Con.-2/9/110+2/9/100-Selco",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 255,
+      "name": "Z5+1",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 256,
+      "name": "cutter-sharpening-PCD-cutter-per-linear-mm-DSC66",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 257,
+      "name": "cutter-sharpening-PCD-cutter-per-linear-mm-DSC67",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 258,
+      "name": "cutter-sharpening-PCD-cutter-per-linear-mm-DSC65",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 259,
+      "name": "cutter-sharpening-PCD-cutter-per-linear-mm-DSC59",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 260,
+      "name": "300x3,2/2,2x30-T=96-TC-pos.-Com-PH",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 261,
+      "name": "D6-H20-S6",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 262,
+      "name": "D8-H26-S6",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 263,
+      "name": "D12-H25.4-S6",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 264,
+      "name": "350x3,5/2,5x30-T=84-ATB",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 265,
+      "name": "D6.35-H20-S6",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 266,
+      "name": "D19.05-H13-S6-R9.52",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 267,
+      "name": "MAR300323096SB-TC-300-x-3,2/2,2-x-30-Z=-96-TF-Holz-Low-Noise,-Kombi-NL",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 268,
+      "name": "cutter-sharpening-PCD-cutter-per-linear-mm-Z18x12-DX-239.4-4.20",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 269,
+      "name": "cutter-sharpening-PCD-cutter-per-linear-mm-Z18x12-SX-239.4-4.20",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 270,
+      "name": "sawblade-sharpening-PCD-sawblade-per-linear-mm-Z72x4.8",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 271,
+      "name": "scoring-blade-sharpening-PCD-scoring-blade-per-linear-Z36x4.8-mm",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 272,
+      "name": "diamond-saw-blade-TRF-D=300-B=32-d=30-Z=72",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 273,
+      "name": "cutter-sharpening-PCD-cutter-per-linear-mm-Z30x12-DX",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 274,
+      "name": "cutter-sharpening-PCD-cutter-per-linear-mm-Z30x12-SX",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 275,
+      "name": "Z3+3-Carbide-Body",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 276,
+      "name": "Z1",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 277,
+      "name": "cutter-sharpening-PCD-cutter-per-linear-mm-Z12x14.3DX",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 278,
+      "name": "cutter-sharpening-PCD-cutter-per-linear-mm-Z12x14.3SX",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 279,
+      "name": "cutter-sharpening-PCD-cutter-per-linear-mm-Z18x15.3DX",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 280,
+      "name": "cutter-sharpening-PCD-cutter-per-linear-mm-Z18x15.3SX",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 281,
+      "name": "router-sharpening-PCD-router-bit-per-linear-mm-Z9x6",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 282,
+      "name": "sawblade-sharpening-PCD-sawblade-per-linear-mm-Z20x3.2",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 283,
+      "name": "inserts-sharpening-PCD-inserts-for-cutter-per-linear-Z48x14.3-mm",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 284,
+      "name": "diamond-router-bit-Mono-D6x12-G6-Z1-Neg-Carbide-Body",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 285,
+      "name": "diamond-router-bit-Mono-D5x10-G5-Z1-Neg-Carbide-Body",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 286,
+      "name": "sawblade-sharpening-PCD-sawblade-per-linear-mm-Z96x3.2",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 287,
+      "name": "router-sharpening-PCD-router-bit-per-linear-mm-Z2x15",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 288,
+      "name": "sh-hm-TCT-sharpening-Sharpening-80mm-Useable-length-spiral-Z3",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 289,
+      "name": "Z1-Mechanical-router-for-chamfering",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 290,
+      "name": "profil-sharpening-PCD-profiled-router-bit-per-linear-mm-Special-profil-Z6",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 291,
+      "name": "300x3,2/2,2x30-T=28-ATB-AKB-Combi-PH",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 292,
+      "name": "diamond-saw-blade-D=380-B=4.4-d=60-Z=72-(000006)",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 293,
+      "name": "diamond-scoring-blade-D=200-B=4.3/5.5-d=45-Z=36-Conical-(000005)",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 294,
+      "name": "300-x-4,4/3,2-x-80-T=-72-TFF-PH-4/9/100+2/9/110+2/14/110",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 295,
+      "name": "200-x-4,4---5,4/3,2-x-80-T=-72-CON-Gabbiani",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 296,
+      "name": "D3x57",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 297,
+      "name": "D20x70",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 298,
+      "name": "D11-12-precision-collet-D11-12-ER40-Business-Hours:-Mon-Sat---8:00-AM---5:00-PM",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 299,
+      "name": "cutter-pcs-sharpening-PCD-cutter-per-linear-mm-Z15x10---D12x27",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 300,
+      "name": "cutter-pcs-sharpening-PCD-cutter-per-linear-mm-Z12x10---D12x22",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 301,
+      "name": "cutter-pcs-sharpening-PCD-cutter-per-linear-mm-Z1x20---D8x20",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 302,
+      "name": "cutter-pcs-sharpening-PCD-cutter-per-linear-mm-Z1x15---D6x15",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 303,
+      "name": "cutter-pcs-sharpening-PCD-cutter-per-linear-mm-Z6x10---D16x43",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 304,
+      "name": "cutter-pcs-sharpening-PCD-cutter-per-linear-mm-Z4x10---D12x22",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 305,
+      "name": "router-sharpening-PCD-router-bit-per-linear-mm-Z2x20",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 306,
+      "name": "router-sharpening-PCD-router-bit-per-linear-mm-Z2+2",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 307,
+      "name": "diamond-profiled-router-bit-D=50-B=18-G=20-Z=2",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 308,
+      "name": "HSS-planer-knife-L=530-w=35-t=3-high-speed-steel-18%",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 309,
+      "name": "sawblade-sharpening-PCD-sawblade-per-linear-mm-DGS19-QTY4",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 310,
+      "name": "scoring-blade-sharpening-PCD-scoring-blade-per-linear-mm-Z36x4.8",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 311,
+      "name": "Z3+3-compressed-nesting-router-bit-D=10-UL=22-Z3+3",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 312,
+      "name": "Long-Blade-Straight-Bit-D12.7-H63.5-S12",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 313,
+      "name": "diamond-router-bit-D=12-UL=15-G=12-Z2-Neg-Carbide-Body",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 314,
+      "name": "sawblade-sharpening-PCD-sawblade-per-linear-mm-Z72x4.4",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 315,
+      "name": "scoring-blade-sharpening-PCD-scoring-blade-per-linear-mm-Z36x4.4",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 316,
+      "name": "diamond-saw-blade-TRF-D=350-B=44-d=65-Z=72-BIESSE",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 317,
+      "name": "diamond-scoring-blade-D=200-B=4.4-d=65-Z=36",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 318,
+      "name": "Long-Blade-Flush-Trim-Bit-D12.7-H63.5-S12",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 319,
+      "name": "diamond-router-bit-D=12-UL=20-G=12-Z2-Carbide-Body",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 320,
+      "name": "sawblade-sharpening-PCD-sawblade-per-linear-Z64x2.8-mm-(1223188)",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 321,
+      "name": "router-sharpening-PCD-router-bit-per-linear-mm-DRP745",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 322,
+      "name": "sawblade-sharpening-PCD-sawblade-per-linear-DGS19-mm",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 323,
+      "name": "d35-Mechanical-cutter-for-profiled-knives-D=108-B=50-mec.",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 324,
+      "name": "Special-profiled-knifes-Solid-Carbide-HM-60x50",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 325,
+      "name": "Special-profiled-knifes-Solid-Carbide-HM-50x50",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 326,
+      "name": "35/30",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 327,
+      "name": "RDN-Negative-spiral-integral-spiral-router-bit-D12x32-Z2",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 328,
+      "name": "Mec.-aluminum-cutter-ECO-D=125-B=6.5-d=30+2-Z=3+3-30deg-DX",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 329,
+      "name": "Mec.-aluminum-cutter-ECO-D=125-B=6.5-d=30+2-Z=3+3-30deg-SX",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 330,
+      "name": "SX-diamond-hinges-boring-router-bit-D35x70",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 331,
+      "name": "diamond-Grooving-Blade-D100-B=2.3-d=30-Z20",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 332,
+      "name": "diamond-Grooving-Blade-D100-B=4-d=30-Z24",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 333,
+      "name": "Saw-blade-tool-holder-with-shank-DS=20-D=30-LT=90",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 334,
+      "name": "D3-2-precision-collet-D3-2-ER32",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 335,
+      "name": "Pattern-Bit-D12-H25.4-S6",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 336,
+      "name": "diamond-router-bit-D=8-UL=15-G=8-Z2-Pos/Neg-Carbide-Body",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 337,
+      "name": "Integral-carbide-router-bit-D6-G6",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 338,
+      "name": "sawblade-sharpening-PCD-sawblade-per-linear-mm-Z24x3.2",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 339,
+      "name": "sawblade-sharpening-PCD-sawblade-per-linear-mm-Z60x3.2",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 340,
+      "name": "350-x-4,4/3,2-x-80-Z=-72-TFF-NL-4/9/100+2/9/110+2/14/110",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 341,
+      "name": "cutter-sharpening-PCD-cutter-per-linear-mm-Z18x14-DX",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 342,
+      "name": "cutter-sharpening-PCD-cutter-per-linear-mm-Z18x14-SX",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 343,
+      "name": "RDN-Negative-integral-spiral-router-bit-D8x32-Z2",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 344,
+      "name": "DX-TCT-dowel-drills-D10x57.5",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 345,
+      "name": "SX-TCT-dowel-drills-D10x57.5",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 346,
+      "name": "SX-TCT-dowel-drills-D5x70",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 347,
+      "name": "DX-TCT-dowel-drills-D5x70",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 348,
+      "name": "DX-TCT-dowel-drills-D8x57.5",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 349,
+      "name": "SX-TCT-dowel-drills-D8x57.5",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 350,
+      "name": "SX-TCT-through-hole-drills-D5x70",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 351,
+      "name": "DX-TCT-through-hole-drills-D5x70",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 352,
+      "name": "DX-TCT-through-hole-drills-D6x70",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 353,
+      "name": "DX-Hinges-boring-bits-D20x70",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 354,
+      "name": "TCT-Compressed-Spiral-Bit-D6-H22-S12-Z2+2",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 355,
+      "name": "TCT-Circular-Saw-Blade-300x3,2/2,2x30-T=28-ATB-AKB-Combi-PH",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 356,
+      "name": "TCT-Rip-Saw-Blade-350x3,5/2,5x30-T=32-ATB-AKB",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 357,
+      "name": "TCT-Panel-Sizing-Saw-Blade-300x3,2/2,2x30-T=96-TC-pos.-Com-PH",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 358,
+      "name": "ALU-Full-Mec.-aluminum-cutter-D=100-B=6.5-d=30+2-Z=3+3-30deg",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 359,
+      "name": "RDP-Positive-integral-spiral-router-bit-D10x42-Z2",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 360,
+      "name": "DX-Integral-blind-hole-drill-D4x57",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 361,
+      "name": "sawblade-sharpening-PCD-sawblade-per-linear-60x3.2-mm",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 362,
+      "name": "RDN-Negative-integral-spiral-router-bit-D4x12-Z2",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 363,
+      "name": "TCT-Circular-Saw-Blade-300x3,2/2,2x30-T=72-ATB",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 364,
+      "name": "4-sides-sharpened-knife-for-ART.191-40x12x1.5",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 365,
+      "name": "inserts-sharpening-PCD-inserts-for-cutter-per-linear-mm-Z12X14-DX",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 366,
+      "name": "inserts-sharpening-PCD-inserts-for-cutter-per-linear-mm-Z12X14-SX",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 367,
+      "name": "RDN-Negative-integral-spiral-router-bit-D6x22-Z2",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 368,
+      "name": "Flush-Trim-Bit-D6.35-H20-S6",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 369,
+      "name": "MAR300446560TFF-300-x-4,4/3,2-x-65-T=-60-TFF-ph-2/9/110-mm",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 370,
+      "name": "diamond-saw-blade-TRF-D=450-B=44-d=60-+2(14/125)-Z=72",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 371,
+      "name": "diamond-saw-blade-Nanxing-D=400-B=44-d=60-Z=84",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 372,
+      "name": "DX-TCT-dowel-drills-D8x70-10-pcs",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 373,
+      "name": "SX-TCT-dowel-drills-D8x70-10-pcs",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 374,
+      "name": "cutter-sharpening-PCD-cutter-per-linear-mm-Z21x14-DX",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 375,
+      "name": "cutter-sharpening-PCD-cutter-per-linear-mm-Z21x14-SX",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 376,
+      "name": "TCT-Circular-Saw-Blade-350x3,5/2,5x30-T=84-ATB",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 377,
+      "name": "router-sharpening-PCD-router-bit-per-linear-mm-Z5x12",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 378,
+      "name": "TCT Rip Saw Blade 400x3,5/2,5x30 T=36 ATB AKB",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 379,
+      "name": "diamond-router-bit-D=12-UL=25-G=12-Z1+1",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 380,
+      "name": "diamond-router-bit-D=16-UL=43-G=16-Z5+1",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 381,
+      "name": "DX-TCT-dowel-drills-D10x70",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 382,
+      "name": "SX-TCT-dowel-drills-D10x70",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 383,
+      "name": "DX-Hinges-boring-bits-D35x70",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 384,
+      "name": "RDP-Positive-integral-spiral-router-bit-D6x22-Z2",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 385,
+      "name": "diamond-saw-blade-D=380-B=4.4-d=30-Z=72",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 386,
+      "name": "diamond-scoring-blade-D=180-B=4.3/5.5-d=30-Z=36-Conical",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 387,
+      "name": "Tungsten-carbide-knives-for-portable-planers",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 388,
+      "name": "Carving-Bit-D12.7-H9.5-S6-R6.35",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 389,
+      "name": "Carving-Bit-D15.9-H11-S6-R7.96",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 390,
+      "name": "Carving-Bit-D19.05-H13-S6-R9.52",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 391,
+      "name": "TCT-Circular-Saw-Blade-300x3,2/2,2x30-T=48-ATB15°",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 392,
+      "name": "MAR300323096SB-TC-300-x-3,2/2,2-x-30-Z=-96-TF-Holz-Low-Noise,-Veneer-Cut",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 393,
+      "name": "TCT-straight-router-bit-D12x40-G12",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 394,
+      "name": "diamond-profiled-router-bit-D=50-B=18-G=12-Z=2",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 395,
+      "name": "inserts-sharpening-PCD-inserts-for-cutter-per-linear-mm-Z28x14",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 396,
+      "name": "TCT-Circular-Saw-Blade-350x3,5/2,5x30-T=54-ATB-Combi-PH",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 397,
+      "name": "Double-Curver-Finger-Bit-D22.2-H20.63-S6-R5",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 398,
+      "name": "Double-Curver-Finger-Bit-D38.1-H20.63-S12-R5.96",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 399,
+      "name": "Drawer-Lock-Bit-D40-H15.5-S12",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 400,
+      "name": "cutter-pcs-sharpening-PCD-cutter-per-linear-mm-Z30x63-DX",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 401,
+      "name": "cutter-pcs-sharpening-PCD-cutter-per-linear-mm-Z30x63-SX",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 402,
+      "name": "pl-Positive-integral-spiral-router-bit-for-plexiglass-Aliprandi-made-in-Italy-D4x12-Z1",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 403,
+      "name": "alu-Positive-integral-spiral-router-bit-for-aluminum-Aliprandi-made-in-Italy-D4x12-Z1-Down",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 404,
+      "name": "DX-TCT-dowel-drills-Aliprandi-made-in-italy-D10x70",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 405,
+      "name": "SX-TCT-dowel-drills-Aliprandi-made-in-italy-D10x70",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 406,
+      "name": "DX-TCT-dowel-drills-Aliprandi-made-in-italy-D6x70",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 407,
+      "name": "SX-TCT-dowel-drills-Aliprandi-made-in-italy-D6x70",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 408,
+      "name": "DX-Hinges-boring-bits-Aliprandi-made-in-italy-D15x70",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 409,
+      "name": "Martin-Made-in-Germany-380-x-4,8/3,5-x-60-T=-72",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 410,
+      "name": "cutter-sharpening-PCD-cutter-per-linear-mm-Z14x11.2-DX",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 411,
+      "name": "cutter-sharpening-PCD-cutter-per-linear-mm-Z14x11.2-SX",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 412,
+      "name": "TCT-router-bit-D16-G6",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 413,
+      "name": "RDP-Positive-integral-spiral-D16x72-Z3-router-bit",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 414,
+      "name": "router-sharpening-PCD-router-bit-per-linear-mm-Z7",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 415,
+      "name": "sh-hm-TCT-sharpening-D16x52-Z3-RT",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 416,
+      "name": "cutter-sharpening-PCD-cutter-per-linear-mm-Z15x14-DX",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 417,
+      "name": "cutter-sharpening-PCD-cutter-per-linear-mm-Z15x14-SX",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 418,
+      "name": "router-sharpening-PCD-router-bit-per-linear-mm-Z14x12",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 419,
+      "name": "diamond-router-bit-tubro-cut-D=20-UL=25-G=20-Z2+2",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 420,
+      "name": "scoring-blade-sharpening-PCD-scoring-blade-per-linear-mm-Z32x4.8",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 421,
+      "name": "router-sharpening-PCD-router-bit-per-Z2+2",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 422,
+      "name": "sawblade-sharpening-PCD-sawblade-Z72x4.4",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 423,
+      "name": "Z2-diamond-router-bit-D=12-UL=27-G=25-1-pcs-LT=90-Z2",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 424,
+      "name": "cutter-sharpening-PCD-cutter-per-linear-mm-Z18*14-DX",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 425,
+      "name": "cutter-sharpening-PCD-cutter-per-linear-mm-Z18*14-SX",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 426,
+      "name": "diamond-router-bit-D=20-UL=52-G=20-Z6+1",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 427,
+      "name": "RDN-Negative-integral-spiral-router-bit-D5x17-Z2",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 428,
+      "name": "sh-hm-TCT-sharpening-sharpening-spiral-router-bits-Z3x52",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 429,
+      "name": "D16-Diamond-Grooving-Bit-D=16-G=12-Z=2",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 430,
+      "name": "sawblade-sharpening-PCD-sawblade-per-linear-mm-Z72*4.4",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 431,
+      "name": "profil-sharpening-PCD-profiled-router-bit-per-linear-mm-Special-double-profil-Z2+2",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 432,
+      "name": "RDP-Positive-integral-spiral-router-bit-D8x32-Z2",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 433,
+      "name": "DX-Integral-through-hole-drill-D3x57",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 434,
+      "name": "DX-TCT-dowel-drills-D6x70",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 435,
+      "name": "sawblade-sharpening-PCD-sawblade-per-linear-mm-Z24x6.5",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 436,
+      "name": "router-sharpening-PCD-router-bit-per-linear-mm-Z1+1",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 437,
+      "name": "router-sharpening-PCD-router-bit-per-linear-mm-Z2x22",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 438,
+      "name": "router-sharpening-PCD-router-bit-per-linear-mm-Z2x26",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 439,
+      "name": "router-sharpening-PCD-router-bit-per-linear-mm-Z14x11",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 440,
+      "name": "SP-diamond-router-bit-D=12-UL=22-G=12-Z3+3-Carbide-Body",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 441,
+      "name": "diamond-Grooving-Blade-D100-B=6-d=20-Z24",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 442,
+      "name": "inserts-sharpening-PCD-inserts-for-cutter-per-linear-mm-Z21X14+3x7",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 443,
+      "name": "router-sharpening-PCD-router-bit-per-linear-mm-Profiled-Z2-DX",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 444,
+      "name": "router-sharpening-PCD-router-bit-per-linear-mm-Profiled-Z2-SX",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 445,
+      "name": "R6-Corner-rounding-with-bearing-R6-G12",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 446,
+      "name": "Corner-Round-Bit-D73.02-H36.7-S12-R30.16",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 447,
+      "name": "Raised-Panel-Bit-15Deg-D80-H18-S12",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 448,
+      "name": "HSS-planer-knife-L=410-w=30-t=3-high-speed-steel-18%",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 449,
+      "name": "DX-TCT-dowel-drills-D12x70",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 450,
+      "name": "SX-TCT-dowel-drills-D12x70",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 451,
+      "name": "D13.5-Diamond-Grooving-Bit-D=13.5-G=12-Z=2",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 452,
+      "name": "TCT-Rip-Saw-Blade-400x3,5/2,5x30-T=36-ATB-AKB",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 453,
+      "name": "Tungsten-carbide-indexable-inserts-CR",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 454,
+      "name": "diamond-router-bit-D=10-UL=20-G=12-Z2",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 455,
+      "name": "Mec.-lipping-trimmer-D=56-B=14-d=16-Z=4-Changeable-knives",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 456,
+      "name": "sh-hm-TCT-sharpening-D16x100-Z3",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 457,
+      "name": "sh-hm-TCT-sharpening-D12x42-Z3",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 458,
+      "name": "sh-hm-TCT-sharpening-D12x42-Z2",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 459,
+      "name": "sh-hm-TCT-sharpening-D6x27-Z2",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 460,
+      "name": "DX-Integral-through-hole-drill-D6x70-Clean-Hole-Right",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 461,
+      "name": "Flush-Trim-Bit-D12.7-H30-S6",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 462,
+      "name": "cutter-sharpening-PCD-cutter-per-linear-mm-DSC6",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 463,
+      "name": "cutter-sharpening-PCD-cutter-per-linear-mm-Z21x14",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 464,
+      "name": "inserts-V-Eco-diamond-inserts-for-mechanical-cutter-heads-Edge-banding-machine-Eco.-DX",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 465,
+      "name": "inserts-V-Eco-diamond-inserts-for-mechanical-cutter-heads-Edge-banding-machine-Eco.-SX",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 466,
+      "name": "special-profiled-router-bit-R=13,-D=12,-TL=-80",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 467,
+      "name": "special-profiled-router-bit-R=7,-D=12,-TL=-80",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 468,
+      "name": "special-profiled-ball-nose-router-bit-Ball-nose-R=15,-D=12,-TL=",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 469,
+      "name": "D10x32 Z2",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 470,
+      "name": "D=108 B=50 mec.",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 471,
+      "name": "Solid Carbide HM 60x50",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 472,
+      "name": "Solid Carbide HM 50x50",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 473,
+      "name": "DX-Pre-milling-cutter-ECO-D=100-B=6.5-d=30+2-Z=2+2-30deg",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 474,
+      "name": "SX-Pre-milling-cutter-ECO-D=100-B=6.5-d=30+2-Z=2+2-30deg",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 475,
+      "name": "RDP-Positive-integral-spiral-router-bit-D3x12-Z2",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 476,
+      "name": "RDP-Positive-integral-spiral-router-bit-D8x42-Z2",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 477,
+      "name": "RDP-Positive-integral-spiral-router-bit-D10x32-Z2",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 478,
+      "name": "TCT-Circular-Saw-Blade-400x3,5/2,5x30-T=60-ATB",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 479,
+      "name": "RT-RDP-Positive-integral-spiral-router-bit-with-D16x40-Z3-RT-chip-breaker",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 480,
+      "name": "D8-7-precision-collet-D8-9-ER32",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 481,
+      "name": "SX-Integral-through-hole-drill-D6x70-Clean-Hole-Left",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 482,
+      "name": "DX-TCT-dowel-drills-D6x70-Right",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 483,
+      "name": "SX-TCT-dowel-drills-D6x70-Left",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 484,
+      "name": "diamond-saw-D=340-B=44-d=80-Z=72-(000008)-blade-TRF",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 485,
+      "name": "diamond-scoring-D=200-B=4.3/5.5-d=80-+-2(14/110)-Z=36-blade-(000007)",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 486,
+      "name": "diamond-router-bit-D=10-UL=27-G=12-Z3+1",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 487,
+      "name": "sawblade-RESHARPENING-CHARGES-OF-LEUCO-sharpening-PCD-DIAMOND-CIRCULAR-SAW-BLADE---REF.-NO.-sawblade-per-linear-mm-80443551-(BIESSE-835)",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 488,
+      "name": "sawblade-RESHARPENING-CHARGES-OF-LEUCO-sharpening-PCD-DIAMOND-SCORING-SAW-BLADE---REF.-NO.-sawblade-per-linear-mm-80410895-(BIESSE-835)",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 489,
+      "name": "sawblade-RESHARPENING-CHARGES-OF-LEUCO-sharpening-PCD-DIAMOND-PANEL-SIZING-SAW-BLADE---REF.-sawblade-per-linear-mm-NO.-80193350R-(SCM)",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 490,
+      "name": "sawblade-RESHARPENING-CHARGES-OF-LEUCO-sharpening-PCD-DIAMOND-SCORING-SAW-BLADE---REF.-NO.-sawblade-per-linear-mm-80469266-(SCM)",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 491,
+      "name": "diamond-router-D=12-UL=20-G=12-Z2-Carbide-Body-bit",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 492,
+      "name": "LAM100.4-PCD-Portable-Saw-Blade-Lamello-D=100.4-B=7-Z=3",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 493,
+      "name": "sawblade-sharpening-PCD-sawblade-per-Z72x3.2-(05242)-linear-mm",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 494,
+      "name": "sawblade-sharpening-PCD-sawblade-per-Z72x3.2-linear-mm-(0323120)",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 495,
+      "name": "sawblade-sharpening-PCD-sawblade-per-Z72x3.2-linear-mm-(0919787)",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 496,
+      "name": "sawblade-sharpening-PCD-sawblade-per-Z72x3.2-(197242)-linear-mm",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 497,
+      "name": "sawblade-sharpening-PCD-sawblade-per-Z72x3.2-(060325)-linear-mm",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 498,
+      "name": "sawblade-sharpening-PCD-sawblade-per-Z72x3.2-linear-mm-(3007252)",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 499,
+      "name": "sawblade-sharpening-PCD-sawblade-per-Z72x3.2-linear-mm-(0907254)",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 500,
+      "name": "sawblade-sharpening-PCD-sawblade-per-Z72x3.2-linear-mm-(0124015)",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 501,
+      "name": "sawblade-sharpening-PCD-sawblade-per-Z72x3.2-linear-mm-(1221607)",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 502,
+      "name": "sawblade-sharpening-PCD-sawblade-per-Z72x3.2-(66331)-linear-mm",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 503,
+      "name": "and-1-VAT",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 504,
+      "name": "sawblade-sharpening-PCD-sawblade-per-Z72x4.4",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 505,
+      "name": "sawblade-sharpening-PCD-sawblade-per-Z36x4.4",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 506,
+      "name": "sawblade-sharpening-PCD-sawblade-per-Z84x4.4-(discount-for-first-linear-mm-sharpening)",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 507,
+      "name": "scoring-blade-sharpening-PCD-scoring-Z36x4.4-(discount-for-first-blade-per-linear-mm-sharpening)",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 508,
+      "name": "scoring-blade-sharpening-PCD-scoring-blade-per-linear-mm-Z24*3.2",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 509,
+      "name": "router-sharpening-PCD-router-bit-per-linear-mm-8x3",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 510,
+      "name": "DX-TCT-through-hole-drills-D10x70",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 511,
+      "name": "Planner-knife-HM-centrolock-system-130x16x3",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 512,
+      "name": "Planner-knife-HM-centrolock-system-240x16x3",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 513,
+      "name": "diamond-saw-blade-TRF-D=300-B=32-d=30-+2(7/42)+2(9/46,4)+2(10/60)-Z=96",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 514,
+      "name": "TCT-grooving-cutter-D=140-B=12-Z=6",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 515,
+      "name": "D13-14-precision-collet-D13-14-ER40",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 516,
+      "name": "D15-16-precision-collet-D15-16-ER40",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 517,
+      "name": "D17-18-precision-collet-D17-18-ER40",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 518,
+      "name": "D19-20-precision-collet-D19-20-ER40",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 519,
+      "name": "D25-24-precision-collet-D25-24-ER40",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 520,
+      "name": "RDN-Negative-integral-spiral-router-bit-D10x32-Z2",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 521,
+      "name": "90-deg-V-Slotting-Cutter-D50.8-H30-S12",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 522,
+      "name": "R6.35-Diamond-corner-rounding-with-bearing-R6.35-G12",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 523,
+      "name": "sawblade-sharpening-PCD-sawblade-per-linear-mm-72X4.8",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 524,
+      "name": "scoring-blade-sharpening-PCD-scoring-blade-per-linear-mm-30X4.8",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 525,
+      "name": "sawblade-sharpening-PCD-sawblade-per-linear-mm-72X4.4",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 526,
+      "name": "scoring-blade-sharpening-PCD-scoring-blade-per-linear-mm-36X4.4",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 527,
+      "name": "sawblade-sharpening-PCD-sawblade-per-linear-Z72x4.4-First-mm-sharpening",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 528,
+      "name": "scoring-blade-sharpening-PCD-scoring-blade-Z36x4.4-per-linear-mm",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 529,
+      "name": "sawblade-sharpening-PCD-sawblade-per-linear-Z24x3.2-First-mm-sharpening",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 530,
+      "name": "diamond-router-bit-D=12-UL=43-G=12-Z5+1",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 531,
+      "name": "diamond-router-bit-D=10-UL=15-G=10-Z2-Neg-Carbide-Body",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 532,
+      "name": "Mec.-jointing-cutter-head-D=140-B=50-d=35-Z=2",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 533,
+      "name": "Cutter-head-tool-holder-for-CNC-D=30-LT=170",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 534,
+      "name": "RT-RDP-Positive-integral-spiral-router-bit-with-chip-breaker-D12x52-Z3-RT",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 535,
+      "name": "DX-diamond-boring-router-bit-D10.5x70",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 536,
+      "name": "RDP-Positive-integral-spiral-router-bit-D12x52-Z3",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 537,
+      "name": "cutter-sharpening-PCD-cutter-per-linear-DSC65-mm",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 538,
+      "name": "cutter-sharpening-PCD-cutter-per-linear-DSC67-mm",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 539,
+      "name": "cutter-sharpening-PCD-sawblade-per-linear-Z72x3.2-mm",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 540,
+      "name": "router-sharpening-PCD-router-bit-per-linear-mm-Z4x12",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 541,
+      "name": "DX-diamond-boring-router-bit-D35x70",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 542,
+      "name": "Nut-Precision-Nut-ER25",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 543,
+      "name": "D12-precision-collet-D12-ER25",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 544,
+      "name": "L-HM-Scraper-Knives-Edge-banding-machine-R1.3-Left",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 545,
+      "name": "R-HM-Scraper-Knives-Edge-banding-machine-R1.3-Right",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 546,
+      "name": "TCT-Circular-Saw-Blade-250x3,2/2,2x40-T=40-ATB-combi-PH",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 547,
+      "name": "Tungsten-carbide-indexable-inserts-TIGRA-CR",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 548,
+      "name": "Tungsten-carbide-indexable-inserts-TIGRA",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 549,
+      "name": "RDP-Positive-integral-spiral-router-bit-D12x42-Z2",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 550,
+      "name": "inserts-L-diamond-inserts-for-mechanical-cutter-heads-14x14x2.5-SCM-edge-banding-machine",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 551,
+      "name": "TCT-Rip-Saw-Blade-350x3,5/2,5x30-T=32",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 552,
+      "name": "350357028+6-FREUD-TCT-Rip-Saw-Blade-350x3,5/2,5x70-T=28+2+4",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 553,
+      "name": "RDN-Negative-integral-spiral-router-bit-D8x22-Z2",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 554,
+      "name": "15-30-plus-Mec.-adjustable-grooving-cutter-D=160-B=15-30-d=40",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 555,
+      "name": "DX-Hinges-boring-bits-D40x57",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 556,
+      "name": "Freud-Saw-Blade-350x3.5x30-Z32",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 557,
+      "name": "diamond-router-bit-D=10-UL=15-G=10-Z2-Carbide-Body",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 558,
+      "name": "Tungsten-carbide-knives-for-portable-planers-TIGRA",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 559,
+      "name": "Metric-Straight-Bit-D8-H26-S6",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 560,
+      "name": "HSS-planer-knife-L=600-w=30-t=3-high-speed-steel-18%",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 561,
+      "name": "Planner-knife-HM-bulldozer-system-TIGRA-made-in-Germany-130x13.6x1.8",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 562,
+      "name": "Planner-knife-HM-bulldozer-system-TIGRA-made-in-Germany-230x13.6x1.8",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 563,
+      "name": "RDP-Positive-integral-spiral-router-bit-D10x52-Z2",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 564,
+      "name": "350x4.4/3.2x60-Z72-beam-sawblade-(Holzma)-FREUD",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 565,
+      "name": "320x4.4/3.2x60-Z72-beam-sawblade-FREUD",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 566,
+      "name": "200x4.3-5.5/3.2x45-Z60-Con.-scoring-blade-FREUD",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 567,
+      "name": "diamond-saw-blade-D=380-B=4.4-d=75-+-2(10/100)-+-2(13/105)-Z=72",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 568,
+      "name": "diamond-chamfering-router-bit-D=48-B=9-G=20-Z=2",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 569,
+      "name": "HM-Scraper-Turnover-Knives-Homag-edge-banding-machine-12x20x2-R1",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 570,
+      "name": "High-speed-steal-profile-insert-for-07-136-80x50",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 571,
+      "name": "sawblade-pcs-SHARPENING-OF-LEUCO-DIAMOND-PANEL-sharpening-PCD-SIZING-SAWBLADE-DP-U-CUT--SIZE;D-400MM-X-sawblade-per-linear-B-4.4MM-X-D-3.2MM-X-D-3.2MM-X-D-80MM-X-Z-mm-72---193350",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 572,
+      "name": "scoring-blade-SHARPENING-OF-LEUCO-DIAMOND-SCORING-pcs-sharpening-PCD-SAWBLADE-DP-KO--F---SIZE-;-D-200MM-X-B-scoring-blade-per-4.4MM--5-.2-MM-X-D3.5MM-X-D80MM-X-Z-36---linear-mm-80469266",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 573,
+      "name": "sawblade-pcs-SHARPENING-OF-LEUCO-DIAMOND-CIRCULAR-sharpening-PCD-SAW-BLADE---D-355MM-X-B-4.4MM-X-b-3.2-X-d-sawblade-per-linear-65MM-X-Z-72---REF.-NO.-80443551-mm",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 574,
+      "name": "scoring-blade-SHARPENING-OF-LEUCO-DIAMOND-SCORING-pcs-sharpening-PCD-SAW-BLADE---D-300MM-X-B-4.45MM-5.25MM-X-b-scoring-blade-per-3.2MM-X-d-65MM-X-Z-48---REF.-NO.-80410895-linear-mm",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 575,
+      "name": "sawblade-pcs-SHARPENING-OF-BUP-SIERRA-DAIMOND-sharpening-PCD-SAWBLADE-PCD-DP-H6-D=355MM-X-sawblade-per-linear-B/B1=4.4MM-3.2MM-X-D=65MM-X-Z=72-REF-NO--mm-6250355465F72",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 576,
+      "name": "scoring-blade-SHARPENING-OF-LEUCO-DIAMOND-SCORING-pcs-sharpening-PCD-SAW-BLADE---D-300MM-X-B-4.45MM-5.25MM-X-b-scoring-blade-per-3.2MM-X-d-65MM-X-Z-48---REF.-NO.-REF-linear-mm-NO;6260-300-001-62603004365F72/84",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 577,
+      "name": "inserts-V-diamond-inserts-for-mechanical-cutter-heads-Edge-banding-machine-DX",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 578,
+      "name": "inserts-V-diamond-inserts-for-mechanical-cutter-heads-Edge-banding-machine-SX",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 579,
+      "name": "D10 H30 S6",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 580,
+      "name": "Z2x20",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 581,
+      "name": "D120 B=5 d=35+4 Z30",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 582,
+      "name": "D120 B=6 d=35+4 Z30",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 583,
+      "name": "D100 B=5 d=30 Z16",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 584,
+      "name": "D100 B=6 d=30 Z16",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 585,
+      "name": "D120 B=5 d=30 Z35",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 586,
+      "name": "D120 B=6 d=30 Z35",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 587,
+      "name": "Edge banding machine R1.3 Left",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 588,
+      "name": "Edge banding machine R1.3 Right",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 589,
+      "name": "D=16 UL=34 G=20 Z2+2",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 590,
+      "name": "D=20 UL=52 G=20 Z6+1",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 591,
+      "name": "D180 B=6 d=30 Z24",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 592,
+      "name": "30Deg. d=30+2 Z3+3",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 593,
+      "name": "D=200 B=4.3/5.5 d=65 Z=36 Conical",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 594,
+      "name": "D=200 B=4.3/5.5 d=45 Z=36 Conical",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 595,
+      "name": "D=320 B=4.4 d=65 + 2(9/110) Z=72",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 596,
+      "name": "D=350 B=44 d=60 + 2(14/100) Z=72",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 597,
+      "name": "Z18x12 DX 3sss",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 598,
+      "name": "Z36x4.4 3sss",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 599,
+      "name": "Z72x4.4 3sss",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 600,
+      "name": "Z72x4.4 wirutex",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 601,
+      "name": "Z4x16",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 602,
+      "name": "Z3x12",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 603,
+      "name": "D10x32 Z3",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 604,
+      "name": "D16x40 Z2",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 605,
+      "name": "D12.7 H30 S6",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 606,
+      "name": "D12 H30 S12",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 607,
+      "name": "D6.35 H20 S6",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 608,
+      "name": "D12.7 H63.5 S12",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 609,
+      "name": "80x50",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 610,
+      "name": "60x50",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 611,
+      "name": "50x50",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 612,
+      "name": "D38.1 H20.63 S12 R5.96",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 613,
+      "name": "300 x 3,2/2,2 x 30 Z= 96 TF Holz Low Noise, Kombi-NL",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 614,
+      "name": "Z72x4.4",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 615,
+      "name": "Z36x4.4",
+      "category": "Sharpening",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 616,
+      "name": "D=300 B=32 d=30 +2(7/42)+2(9/46,4)+2(10/60) Z=96",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 617,
+      "name": "D3x12 Z2",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 618,
+      "name": "D4x12 Z2",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 619,
+      "name": "D6x22 Z2",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 620,
+      "name": "D8x22 Z2",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 621,
+      "name": "D12x32 Z2",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 622,
+      "name": "COGS-only (no Fact_Sales detail) — SAI kitchen & wooden safes factory",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 623,
+      "name": "COGS-only (no Fact_Sales detail) — VIDEA MASTER PRO",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 624,
+      "name": "COGS-only (no Fact_Sales detail) — Alpha Star Wood Joinery LLC",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    },
+    {
+      "id": 625,
+      "name": "COGS-only (no Fact_Sales detail) — Westreamer FZ LLC",
+      "category": "Tool",
+      "unitPrice": "0.00",
+      "description": null,
+      "createdAt": "2026-09-17T11:48:59.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    }
+  ]
+}

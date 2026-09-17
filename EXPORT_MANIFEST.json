@@ -1,0 +1,51 @@
+{
+  "exportedAt": "2026-09-17T13:39:27.061Z",
+  "databaseName": "DBsBiuZ3MvUxHNELsPPEye",
+  "tables": [
+    {
+      "table": "__drizzle_migrations",
+      "rowCount": 1,
+      "jsonFile": "tables/__drizzle_migrations.json"
+    },
+    {
+      "table": "clientTools",
+      "rowCount": 0,
+      "jsonFile": "tables/clientTools.json"
+    },
+    {
+      "table": "clients",
+      "rowCount": 116,
+      "jsonFile": "tables/clients.json"
+    },
+    {
+      "table": "machines",
+      "rowCount": 0,
+      "jsonFile": "tables/machines.json"
+    },
+    {
+      "table": "operatingCosts",
+      "rowCount": 489,
+      "jsonFile": "tables/operatingCosts.json"
+    },
+    {
+      "table": "syncState",
+      "rowCount": 1,
+      "jsonFile": "tables/syncState.json"
+    },
+    {
+      "table": "tools",
+      "rowCount": 625,
+      "jsonFile": "tables/tools.json"
+    },
+    {
+      "table": "transactions",
+      "rowCount": 1173,
+      "jsonFile": "tables/transactions.json"
+    },
+    {
+      "table": "users",
+      "rowCount": 1,
+      "jsonFile": "tables/users.json"
+    }
+  ]
+}
