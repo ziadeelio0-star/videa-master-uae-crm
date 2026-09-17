@@ -1,0 +1,72 @@
+{
+  "table": "syncState",
+  "columns": [
+    {
+      "Field": "id",
+      "Type": "int",
+      "Null": "NO",
+      "Key": "PRI",
+      "Default": null,
+      "Extra": "auto_increment"
+    },
+    {
+      "Field": "source",
+      "Type": "varchar(64)",
+      "Null": "NO",
+      "Key": "UNI",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "fileHash",
+      "Type": "varchar(128)",
+      "Null": "NO",
+      "Key": "",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "fileName",
+      "Type": "varchar(320)",
+      "Null": "YES",
+      "Key": "",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "summaryJson",
+      "Type": "text",
+      "Null": "YES",
+      "Key": "",
+      "Default": null,
+      "Extra": ""
+    },
+    {
+      "Field": "lastSyncAt",
+      "Type": "timestamp",
+      "Null": "NO",
+      "Key": "",
+      "Default": "CURRENT_TIMESTAMP",
+      "Extra": ""
+    },
+    {
+      "Field": "updatedAt",
+      "Type": "timestamp",
+      "Null": "NO",
+      "Key": "",
+      "Default": "CURRENT_TIMESTAMP",
+      "Extra": "DEFAULT_GENERATED on update CURRENT_TIMESTAMP"
+    }
+  ],
+  "rows": [
+    {
+      "id": 1,
+      "source": "dashboard",
+      "fileHash": "bd969693e765c1e6535312a77471a66e1d31af2c0f1d34dd93e9e1a29395ccca",
+      "fileName": "Videa - Master - Dashboard Finale .xlsx",
+      "summaryJson": "{\"clients\":116,\"tools\":625,\"transactions\":1173,\"invoices\":412,\"totalRevenue\":1008140.55,\"totalCOGS\":413935.99,\"grossProfit\":594204.56,\"balancesUpdated\":37,\"operatingCostsRows\":489,\"operatingCostsTotal\":743387.98,\"inventoryCostsTotal\":299021.72,\"warnings\":[\"5 COGS-only invoice(s) not in Fact_Sales — created synthetic transaction(s) to capture COGS\"]}",
+      "lastSyncAt": "2026-09-17T11:49:00.000Z",
+      "updatedAt": "2026-09-17T11:48:59.000Z"
+    }
+  ]
+}
