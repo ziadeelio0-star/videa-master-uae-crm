@@ -1,0 +1,14 @@
+{
+  "query": "SELECT COUNT(*) AS tx_count, SUM(amount) AS revenue FROM transactions WHERE clientId = 53;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway06.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3STbXXoV93BB8Ns.root --database DBsBiuZ3MvUxHNELsPPEye --execute SELECT COUNT(*) AS tx_count, SUM(amount) AS revenue FROM transactions WHERE clientId = 53;",
+  "rows": [
+    {
+      "tx_count": "0",
+      "revenue": "NULL"
+    }
+  ],
+  "messages": [],
+  "stdout": "tx_count\trevenue\n0\tNULL\n",
+  "stderr": "",
+  "execution_time_ms": 1618
+}

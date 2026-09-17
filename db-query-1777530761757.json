@@ -1,0 +1,33 @@
+{
+  "query": "SELECT id, companyName FROM clients ORDER BY id DESC LIMIT 5;\nSELECT COUNT(*) AS tx_rows FROM transactions;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway06.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3STbXXoV93BB8Ns.root --database DBsBiuZ3MvUxHNELsPPEye --execute SELECT id, companyName FROM clients ORDER BY id DESC LIMIT 5;\nSELECT COUNT(*) AS tx_rows FROM transactions;",
+  "rows": [
+    {
+      "id": "77",
+      "companyName": "Unnamed client #0"
+    },
+    {
+      "id": "76",
+      "companyName": "Finmat Trading Co. LLC"
+    },
+    {
+      "id": "75",
+      "companyName": "VIDEA MASTER PRO"
+    },
+    {
+      "id": "74",
+      "companyName": "Intersol"
+    },
+    {
+      "id": "73",
+      "companyName": "Venesta"
+    }
+  ],
+  "messages": [
+    "tx_rows",
+    "630"
+  ],
+  "stdout": "id\tcompanyName\n77\tUnnamed client #0\n76\tFinmat Trading Co. LLC\n75\tVIDEA MASTER PRO\n74\tIntersol\n73\tVenesta\ntx_rows\n630\n",
+  "stderr": "",
+  "execution_time_ms": 1857
+}

@@ -1,0 +1,34 @@
+# Core runtime and database
+NODE_ENV=production
+PORT=3000
+DATABASE_URL=mysql://DB_USER:DB_PASSWORD@DB_HOST:3306/DB_NAME?ssl=%7B%22rejectUnauthorized%22%3Atrue%7D
+JWT_SECRET=replace-with-a-long-random-secret
+
+# OAuth / authentication. Replace Manus OAuth with your own provider if migrating away from Manus.
+VITE_APP_ID=
+OAUTH_SERVER_URL=
+VITE_OAUTH_PORTAL_URL=
+OWNER_OPEN_ID=
+OWNER_NAME=
+
+# Manus Forge services used by the current implementation for storage, maps, image generation, and data APIs.
+# If fully leaving Manus, replace these integrations in the source and use your own providers.
+BUILT_IN_FORGE_API_URL=
+BUILT_IN_FORGE_API_KEY=
+VITE_FRONTEND_FORGE_API_URL=
+VITE_FRONTEND_FORGE_API_KEY=
+
+# Optional hosted-branding/analytics variables present in the current deployment metadata.
+VITE_APP_TITLE=
+VITE_APP_LOGO=
+VITE_ANALYTICS_ENDPOINT=
+VITE_ANALYTICS_WEBSITE_ID=
+
+# Optional legacy Manager.io integration. Core CRM views use the local database and do not require these.
+MANAGER_API_URL=
+MANAGER_API_KEY=
+TUNNEL_UPDATER_SECRET=
+
+# Test-only safety gate for destructive workbook-import integration tests.
+# Leave unset for the normal test suite.
+RUN_UNIFIED_TEST=

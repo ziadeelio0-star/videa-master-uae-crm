@@ -1,0 +1,16 @@
+{
+  "query": "SELECT id, companyName, industry, activityLevel FROM clients WHERE LOWER(companyName) LIKE '%khan%';",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway06.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3STbXXoV93BB8Ns.root --database DBsBiuZ3MvUxHNELsPPEye --execute SELECT id, companyName, industry, activityLevel FROM clients WHERE LOWER(companyName) LIKE '%khan%';",
+  "rows": [
+    {
+      "id": "53",
+      "companyName": "Khansaheb Civil Engineering L.L.C.",
+      "industry": "Wood",
+      "activityLevel": "low"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tcompanyName\tindustry\tactivityLevel\n53\tKhansaheb Civil Engineering L.L.C.\tWood\tlow\n",
+  "stderr": "",
+  "execution_time_ms": 2322
+}

@@ -1,0 +1,13 @@
+{
+  "query": "DELETE FROM transactions WHERE description = 'QA purchase';\nDELETE FROM clientTools WHERE notes = 'Primary blade';\nDELETE FROM machines WHERE serialNumber LIKE 'SN-%';\nDELETE FROM tools WHERE name LIKE 'QA Saw Blade %';\nDELETE FROM clients WHERE companyName LIKE 'CRUD Test %' OR companyName LIKE 'Vitest Client %';\nSELECT COUNT(*) AS totalClients FROM clients;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway06.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3STbXXoV93BB8Ns.root --database DBsBiuZ3MvUxHNELsPPEye --execute DELETE FROM transactions WHERE description = 'QA purchase';\nDELETE FROM clientTools WHERE notes = 'Primary blade';\nDELETE FROM machines WHERE serialNumber LIKE 'SN-%';\nDELETE FROM tools WHERE name LIKE 'QA Saw Blade %';\nDELETE FROM clients WHERE companyName LIKE 'CRUD Test %' OR companyName LIKE 'Vitest Client %';\nSELECT COUNT(*) AS totalClients FROM clients;",
+  "rows": [
+    {
+      "totalClients": "76"
+    }
+  ],
+  "messages": [],
+  "stdout": "totalClients\n76\n",
+  "stderr": "",
+  "execution_time_ms": 2706
+}

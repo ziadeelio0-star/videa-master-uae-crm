@@ -1,0 +1,14 @@
+{
+  "name": "cutting-tools-crm",
+  "template": "web-db-user",
+  "capabilities": ["db", "server", "user"],
+  "build_command": "pnpm run build",
+  "dev_command": "pnpm run dev",
+  "test_command": "pnpm test",
+  "database": {
+    "env_var": "DATABASE_URL",
+    "driver": "mysql2 / Drizzle ORM",
+    "tls_required": true
+  },
+  "secrets": "Provide values through the destination host's secret manager; see .env.example."
+}

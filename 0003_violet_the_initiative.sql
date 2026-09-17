@@ -1,0 +1,1 @@
+ALTER TABLE `clients` ADD `managerCustomerKey` varchar(64);

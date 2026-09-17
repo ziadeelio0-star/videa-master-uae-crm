@@ -1,0 +1,16 @@
+{
+  "query": "\nSELECT\n  (SELECT COUNT(*) FROM clients) AS total_clients,\n  (SELECT COUNT(DISTINCT clientId) FROM transactions) AS clients_with_tx,\n  (SELECT COUNT(*) FROM transactions) AS total_tx,\n  (SELECT COUNT(*) FROM transactions tx WHERE NOT EXISTS (SELECT 1 FROM clients c WHERE c.id = tx.clientId)) AS orphan_tx;\n",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway06.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3STbXXoV93BB8Ns.root --database DBsBiuZ3MvUxHNELsPPEye --execute \nSELECT\n  (SELECT COUNT(*) FROM clients) AS total_clients,\n  (SELECT COUNT(DISTINCT clientId) FROM transactions) AS clients_with_tx,\n  (SELECT COUNT(*) FROM transactions) AS total_tx,\n  (SELECT COUNT(*) FROM transactions tx WHERE NOT EXISTS (SELECT 1 FROM clients c WHERE c.id = tx.clientId)) AS orphan_tx;\n",
+  "rows": [
+    {
+      "total_clients": "57",
+      "clients_with_tx": "8",
+      "total_tx": "33",
+      "orphan_tx": "0"
+    }
+  ],
+  "messages": [],
+  "stdout": "total_clients\tclients_with_tx\ttotal_tx\torphan_tx\n57\t8\t33\t0\n",
+  "stderr": "",
+  "execution_time_ms": 1637
+}

@@ -1,0 +1,17 @@
+{
+  "query": "SELECT COUNT(*) AS tx_count, SUM(amount) AS total FROM transactions WHERE clientId = 77;\nSELECT id, invoiceNumber, description, amount, type FROM transactions WHERE clientId = 77 LIMIT 5;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway06.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3STbXXoV93BB8Ns.root --database DBsBiuZ3MvUxHNELsPPEye --execute SELECT COUNT(*) AS tx_count, SUM(amount) AS total FROM transactions WHERE clientId = 77;\nSELECT id, invoiceNumber, description, amount, type FROM transactions WHERE clientId = 77 LIMIT 5;",
+  "rows": [
+    {
+      "tx_count": "1",
+      "total": "163.15"
+    }
+  ],
+  "messages": [
+    "id\tinvoiceNumber\tdescription\tamount\ttype",
+    "624\t215\tdiamond-Grooving-Blade-D100-B=5-d=30-Z24\t163.15\tpurchase"
+  ],
+  "stdout": "tx_count\ttotal\n1\t163.15\nid\tinvoiceNumber\tdescription\tamount\ttype\n624\t215\tdiamond-Grooving-Blade-D100-B=5-d=30-Z24\t163.15\tpurchase\n",
+  "stderr": "",
+  "execution_time_ms": 1838
+}

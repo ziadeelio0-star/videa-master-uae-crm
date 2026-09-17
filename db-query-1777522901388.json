@@ -1,0 +1,19 @@
+{
+  "query": "SELECT \n  (SELECT COUNT(*) FROM clients) AS clients,\n  (SELECT COUNT(*) FROM tools) AS tools,\n  (SELECT COUNT(*) FROM transactions) AS transactions,\n  (SELECT ROUND(SUM(amount),2) FROM transactions) AS total_revenue,\n  (SELECT COUNT(DISTINCT invoiceNumber) FROM transactions WHERE invoiceNumber IS NOT NULL) AS unique_invoices,\n  (SELECT MIN(transactionDate) FROM transactions) AS first_date,\n  (SELECT MAX(transactionDate) FROM transactions) AS last_date;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway06.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3STbXXoV93BB8Ns.root --database DBsBiuZ3MvUxHNELsPPEye --execute SELECT \n  (SELECT COUNT(*) FROM clients) AS clients,\n  (SELECT COUNT(*) FROM tools) AS tools,\n  (SELECT COUNT(*) FROM transactions) AS transactions,\n  (SELECT ROUND(SUM(amount),2) FROM transactions) AS total_revenue,\n  (SELECT COUNT(DISTINCT invoiceNumber) FROM transactions WHERE invoiceNumber IS NOT NULL) AS unique_invoices,\n  (SELECT MIN(transactionDate) FROM transactions) AS first_date,\n  (SELECT MAX(transactionDate) FROM transactions) AS last_date;",
+  "rows": [
+    {
+      "clients": "76",
+      "tools": "208",
+      "transactions": "631",
+      "total_revenue": "476655.90",
+      "unique_invoices": "210",
+      "first_date": "2025-09-22 00:00:00",
+      "last_date": "2026-04-27 00:00:00"
+    }
+  ],
+  "messages": [],
+  "stdout": "clients\ttools\ttransactions\ttotal_revenue\tunique_invoices\tfirst_date\tlast_date\n76\t208\t631\t476655.90\t210\t2025-09-22 00:00:00\t2026-04-27 00:00:00\n",
+  "stderr": "",
+  "execution_time_ms": 1602
+}

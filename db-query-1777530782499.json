@@ -1,0 +1,9 @@
+{
+  "query": "UPDATE clients SET companyName = 'Unassigned invoices (no Client_ID in source)', industry = 'Unknown', activityLevel = 'inactive', notes = 'Holding bucket for invoices whose source row had no Client_ID. Re-assign them on the Transactions page.' WHERE id = 77;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway06.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3STbXXoV93BB8Ns.root --database DBsBiuZ3MvUxHNELsPPEye --execute UPDATE clients SET companyName = 'Unassigned invoices (no Client_ID in source)', industry = 'Unknown', activityLevel = 'inactive', notes = 'Holding bucket for invoices whose source row had no Client_ID. Re-assign them on the Transactions page.' WHERE id = 77;",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 1600
+}

@@ -1,0 +1,18 @@
+{
+  "query": "SELECT\n  (SELECT COUNT(*) FROM clients) AS total_clients,\n  (SELECT COUNT(DISTINCT clientId) FROM transactions) AS clients_with_tx,\n  (SELECT COUNT(*) FROM transactions) AS total_tx,\n  (SELECT COUNT(DISTINCT invoiceNumber) FROM transactions WHERE invoiceNumber IS NOT NULL) AS invoices,\n  (SELECT ROUND(SUM(amount),2) FROM transactions) AS total_revenue,\n  (SELECT COUNT(*) FROM tools) AS total_tools;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway06.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3STbXXoV93BB8Ns.root --database DBsBiuZ3MvUxHNELsPPEye --execute SELECT\n  (SELECT COUNT(*) FROM clients) AS total_clients,\n  (SELECT COUNT(DISTINCT clientId) FROM transactions) AS clients_with_tx,\n  (SELECT COUNT(*) FROM transactions) AS total_tx,\n  (SELECT COUNT(DISTINCT invoiceNumber) FROM transactions WHERE invoiceNumber IS NOT NULL) AS invoices,\n  (SELECT ROUND(SUM(amount),2) FROM transactions) AS total_revenue,\n  (SELECT COUNT(*) FROM tools) AS total_tools;",
+  "rows": [
+    {
+      "total_clients": "77",
+      "clients_with_tx": "50",
+      "total_tx": "630",
+      "invoices": "211",
+      "total_revenue": "476144.05",
+      "total_tools": "376"
+    }
+  ],
+  "messages": [],
+  "stdout": "total_clients\tclients_with_tx\ttotal_tx\tinvoices\ttotal_revenue\ttotal_tools\n77\t50\t630\t211\t476144.05\t376\n",
+  "stderr": "",
+  "execution_time_ms": 1671
+}
