@@ -1,12 +1,13 @@
-# Netlify Database production migration - npm compatibility
+# Netlify Database production migration
 [build]
-
-[build.environment]
-  NODE_VERSION = "22.22.0"
-  NPM_VERSION = "10.9.3"
   command = "vite build"
   publish = "dist/public"
   functions = "netlify/functions"
+
+[build.environment]
+  NODE_VERSION = "22.22.0"
+  NPM_VERSION = "10.9.4"
+  NPM_FLAGS = "--legacy-peer-deps"
 
 [[redirects]]
   from = "/*"
