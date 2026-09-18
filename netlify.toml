@@ -1,3 +1,4 @@
+# Netlify Database production migration
 [build]
   command = "vite build"
   publish = "dist/public"
