@@ -1,4 +1,3 @@
-import type { Config } from "@netlify/functions";
 import { createSession, safeEqual, sessionCookie } from "./_lib/auth.mts";
 
 export default async (req: Request) => {
@@ -17,4 +16,4 @@ export default async (req: Request) => {
   return Response.json({ user: { email, name, role: "admin" } }, { headers: { "Set-Cookie": sessionCookie(token), "Cache-Control": "no-store" } });
 };
 
-export const config: Config = { path: "/api/auth/login" };
+export const config = { path: "/api/auth/login" };
