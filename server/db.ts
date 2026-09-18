@@ -1,5 +1,7 @@
 import { and, desc, eq, like, or, sql, sum, count, SQL, isNotNull, ne, gt } from "drizzle-orm";
-import { drizzle } from "drizzle-orm/mysql2";
+import { drizzle } from "drizzle-orm/node-postgres";
+import { getConnectionString } from "@netlify/database";
+import pg from "pg";
 import {
   InsertUser,
   users,
@@ -19,19 +21,14 @@ import {
 import { ENV } from "./_core/env";
 
 let _db: ReturnType<typeof drizzle> | null = null;
-
+let _pool: pg.Pool | null = null;
 export async function getDb() {
-  if (!_db && process.env.DATABASE_URL) {
-    try {
-      _db = drizzle(process.env.DATABASE_URL);
-    } catch (error) {
-      console.warn("[Database] Failed to connect:", error);
-      _db = null;
-    }
+  if (!_db) {
+    try { _pool = new pg.Pool({ connectionString: getConnectionString() }); _db = drizzle(_pool); }
+    catch (error) { console.warn("[Database] Failed to connect:", error); _db = null; }
   }
   return _db;
 }
-
 async function requireDb() {
   const db = await getDb();
   if (!db) throw new Error("Database not available");
@@ -77,7 +74,7 @@ export async function upsertUser(user: InsertUser): Promise<void> {
     if (!values.lastSignedIn) values.lastSignedIn = new Date();
     if (Object.keys(updateSet).length === 0) updateSet.lastSignedIn = new Date();
 
-    await db.insert(users).values(values).onDuplicateKeyUpdate({ set: updateSet });
+    await db.insert(users).values(values).onConflictDoUpdate({ target: users.openId, set: updateSet });
   } catch (error) {
     console.error("[Database] Failed to upsert user:", error);
     throw error;
@@ -130,8 +127,8 @@ export async function getClientById(id: number) {
 export async function createClient(data: InsertClient) {
   const db = await requireDb();
   const res = await db.insert(clients).values(data);
-  const insertId = (res as any)[0]?.insertId ?? (res as any).insertId;
-  return await getClientById(Number(insertId));
+  const insertId = ((res as any).rows ?? res)?.insertId ?? (res as any).insertId;
+  return res[0];
 }
 
 export async function updateClient(id: number, data: Partial<InsertClient>) {
@@ -237,9 +234,8 @@ export async function listMachinesByClient(clientId: number) {
 export async function createMachine(data: InsertMachine) {
   const db = await requireDb();
   const res = await db.insert(machines).values(data);
-  const insertId = (res as any)[0]?.insertId ?? (res as any).insertId;
-  const rows = await db.select().from(machines).where(eq(machines.id, Number(insertId))).limit(1);
-  return rows[0];
+  const insertId = ((res as any).rows ?? res)?.insertId ?? (res as any).insertId;
+  return res[0];
 }
 
 export async function updateMachine(id: number, data: Partial<InsertMachine>) {
@@ -309,9 +305,8 @@ export async function listToolsWithStats(search?: string) {
 export async function createTool(data: InsertTool) {
   const db = await requireDb();
   const res = await db.insert(tools).values(data);
-  const insertId = (res as any)[0]?.insertId ?? (res as any).insertId;
-  const rows = await db.select().from(tools).where(eq(tools.id, Number(insertId))).limit(1);
-  return rows[0];
+  const insertId = ((res as any).rows ?? res)?.insertId ?? (res as any).insertId;
+  undefined
 }
 
 export async function updateTool(id: number, data: Partial<InsertTool>) {
@@ -356,8 +351,8 @@ export async function listClientTools(clientId: number) {
 export async function createClientTool(data: InsertClientTool) {
   const db = await requireDb();
   const res = await db.insert(clientTools).values(data);
-  const insertId = (res as any)[0]?.insertId ?? (res as any).insertId;
-  return { id: Number(insertId) };
+  const insertId = ((res as any).rows ?? res)?.insertId ?? (res as any).insertId;
+  return { id: res[0].id };
 }
 
 export async function deleteClientTool(id: number) {
@@ -421,9 +416,8 @@ export async function listTransactions(filters?: {
 export async function createTransaction(data: InsertTransaction) {
   const db = await requireDb();
   const res = await db.insert(transactions).values(data);
-  const insertId = (res as any)[0]?.insertId ?? (res as any).insertId;
-  const rows = await db.select().from(transactions).where(eq(transactions.id, Number(insertId))).limit(1);
-  return rows[0];
+  const insertId = ((res as any).rows ?? res)?.insertId ?? (res as any).insertId;
+  return res[0];
 }
 
 export async function updateTransaction(id: number, data: Partial<InsertTransaction>) {
@@ -489,7 +483,7 @@ export async function getMonthlyRevenue(monthsBack = 12) {
 
   const res = await db.execute(sql`
     SELECT
-      DATE_FORMAT(transactionDate, '%Y-%m') AS ym,
+      TO_CHAR(transactionDate, 'YYYY-MM') AS ym,
       type,
       COALESCE(SUM(amount), 0) AS total
     FROM transactions
@@ -497,7 +491,7 @@ export async function getMonthlyRevenue(monthsBack = 12) {
     GROUP BY ym, type
     ORDER BY ym
   `);
-  const rows = (res as any)[0] as Array<{ ym: string; type: string; total: string | number }>;
+  const rows = ((res as any).rows ?? res) as Array<{ ym: string; type: string; total: string | number }>;
   return rows.map((r) => ({
     month: r.ym,
     type: r.type as "purchase" | "sharpening",
@@ -552,7 +546,7 @@ export async function getClientStats(clientId: number) {
 
   const monthlyRes = await db.execute(sql`
     SELECT
-      DATE_FORMAT(transactionDate, '%Y-%m') AS ym,
+      TO_CHAR(transactionDate, 'YYYY-MM') AS ym,
       type,
       COALESCE(SUM(amount), 0) AS total,
       COALESCE(SUM(quantity), 0) AS qty
@@ -596,17 +590,17 @@ export async function getMonthlyRevenueV2(monthsBack: number = 12) {
 
   const res = await db.execute(sql`
     SELECT
-      DATE_FORMAT(transactionDate, '%Y-%m') AS month,
+      TO_CHAR(transactionDate, 'YYYY-MM') AS month,
       type,
       COALESCE(SUM(amount), 0) AS total,
       COUNT(*) AS count
     FROM transactions
-    WHERE transactionDate >= DATE_SUB(NOW(), INTERVAL ${monthsBack} MONTH)
+    WHERE transactionDate >= NOW() - (${monthsBack} * INTERVAL '1 month')
     GROUP BY month, type
     ORDER BY month ASC
   `);
 
-  const rows = (res as any)[0] as Array<{
+  const rows = ((res as any).rows ?? res) as Array<{
     month: string;
     type: string;
     total: string | number;
@@ -636,7 +630,7 @@ export async function getClientsWithLastInvoice() {
       c.oldestUnpaidDate,
       c.outstandingBalance,
       MAX(t.transactionDate) AS lastInvoiceDate,
-      (SELECT COALESCE(SUM(amount), 0) FROM transactions WHERE clientId = c.id AND transactionDate >= DATE_SUB(NOW(), INTERVAL 1 MONTH)) AS thisMonthRevenue,
+      (SELECT COALESCE(SUM(amount), 0) FROM transactions WHERE clientId = c.id AND transactionDate >= NOW() - INTERVAL '1 month') AS thisMonthRevenue,
       (SELECT COALESCE(SUM(amount), 0) FROM transactions WHERE clientId = c.id) AS totalRevenue,
       (SELECT COUNT(*) FROM transactions WHERE clientId = c.id) AS transactionCount,
       (SELECT COALESCE(SUM(amount), 0) FROM transactions WHERE clientId = c.id AND status IN ('pending', 'overdue')) AS outstanding
@@ -646,7 +640,7 @@ export async function getClientsWithLastInvoice() {
     ORDER BY COALESCE(MAX(t.transactionDate), '1900-01-01') DESC, c.companyName ASC
   `);
 
-  const rows = (res as any)[0] as Array<{
+  const rows = ((res as any).rows ?? res) as Array<{
     id: number;
     companyName: string;
     email: string | null;
@@ -698,7 +692,7 @@ export async function getTopClientsV2(limit: number = 10) {
     LIMIT ${limit}
   `);
 
-  const rows = (res as any)[0] as Array<{
+  const rows = ((res as any).rows ?? res) as Array<{
     clientId: number;
     clientName: string;
     total: string | number;
@@ -731,7 +725,7 @@ export async function getClientSpendingAnalysis(clientId: number) {
     GROUP BY type
   `);
 
-  const rows = (res as any)[0] as Array<{
+  const rows = ((res as any).rows ?? res) as Array<{
     type: string;
     total: string | number;
     invoiceCount: number;
@@ -761,7 +755,7 @@ export async function getClientMachines(clientId: number) {
     ORDER BY createdAt DESC
   `);
 
-  const rows = (res as any)[0] as Array<{
+  const rows = ((res as any).rows ?? res) as Array<{
     id: number;
     machineType: string;
     brand: string | null;
@@ -779,18 +773,18 @@ export async function getClientMonthlyTrend(clientId: number, monthsBack: number
 
   const res = await db.execute(sql`
     SELECT
-      DATE_FORMAT(transactionDate, '%Y-%m') AS month,
+      TO_CHAR(transactionDate, 'YYYY-MM') AS month,
       type,
       COALESCE(SUM(amount), 0) AS total,
       COUNT(*) AS count
     FROM transactions
     WHERE clientId = ${clientId}
-      AND transactionDate >= DATE_SUB(NOW(), INTERVAL ${monthsBack} MONTH)
+      AND transactionDate >= NOW() - (${monthsBack} * INTERVAL '1 month')
     GROUP BY month, type
     ORDER BY month DESC
   `);
 
-  const rows = (res as any)[0] as Array<{
+  const rows = ((res as any).rows ?? res) as Array<{
     month: string;
     type: string;
     total: string | number;
@@ -816,7 +810,7 @@ export async function getOverdueClients() {
       c.companyName,
       COALESCE(SUM(t.amount), 0) AS outstanding,
       MAX(t.transactionDate) AS lastInvoiceDate,
-      DATEDIFF(NOW(), MAX(t.transactionDate)) AS daysOverdue
+      EXTRACT(DAY FROM (NOW() - MAX(t.transactionDate))) AS daysOverdue
     FROM clients c
     LEFT JOIN transactions t ON c.id = t.clientId AND t.status IN ('pending', 'overdue')
     GROUP BY c.id, c.companyName
@@ -824,7 +818,7 @@ export async function getOverdueClients() {
     ORDER BY daysOverdue DESC
   `);
   
-  const rows = (res as any)[0] as Array<{
+  const rows = ((res as any).rows ?? res) as Array<{
     id: number;
     companyName: string;
     outstanding: string | number;
@@ -863,7 +857,7 @@ export async function getTopPerformers(limit = 10) {
     LIMIT ${limit}
   `);
   
-  const rows = (res as any)[0] as Array<{
+  const rows = ((res as any).rows ?? res) as Array<{
     id: number;
     companyName: string;
     totalRevenue: string | number;
@@ -900,9 +894,9 @@ export async function getReceivablesAging() {
   const res = await db.execute(sql`
     SELECT
       CASE
-        WHEN DATEDIFF(NOW(), transactionDate) <= 30 THEN '0-30'
-        WHEN DATEDIFF(NOW(), transactionDate) <= 60 THEN '31-60'
-        WHEN DATEDIFF(NOW(), transactionDate) <= 90 THEN '61-90'
+        WHEN EXTRACT(DAY FROM (NOW() - transactionDate)) <= 30 THEN '0-30'
+        WHEN EXTRACT(DAY FROM (NOW() - transactionDate)) <= 60 THEN '31-60'
+        WHEN EXTRACT(DAY FROM (NOW() - transactionDate)) <= 90 THEN '61-90'
         ELSE '90+'
       END AS agingBucket,
       COUNT(*) AS invoiceCount,
@@ -919,7 +913,7 @@ export async function getReceivablesAging() {
       END
   `);
   
-  const rows = (res as any)[0] as Array<{
+  const rows = ((res as any).rows ?? res) as Array<{
     agingBucket: string;
     invoiceCount: number;
     outstanding: string | number;
@@ -1008,7 +1002,7 @@ export async function getProfitabilityTrend(monthsBack = 12) {
   const db = await requireDb();
   const res = await db.execute(sql`
     SELECT
-      DATE_FORMAT(transactionDate, '%Y-%m') AS month,
+      TO_CHAR(transactionDate, 'YYYY-MM') AS month,
       COALESCE(SUM(amount), 0) AS revenue,
       COALESCE(SUM(cogs), 0) AS cogs,
       COALESCE(SUM(amount) - SUM(cogs), 0) AS grossProfit,
@@ -1017,12 +1011,12 @@ export async function getProfitabilityTrend(monthsBack = 12) {
         ELSE 0
       END AS marginPercent
     FROM transactions
-    WHERE transactionDate >= DATE_SUB(NOW(), INTERVAL ${monthsBack} MONTH)
+    WHERE transactionDate >= NOW() - (${monthsBack} * INTERVAL '1 month')
     GROUP BY month
     ORDER BY month ASC
   `);
   
-  const rows = (res as any)[0] as Array<{
+  const rows = ((res as any).rows ?? res) as Array<{
     month: string;
     revenue: string | number;
     cogs: string | number;
@@ -1115,11 +1109,11 @@ export async function searchClientsForStockHistory(query: string, limit: number 
     LEFT JOIN transactions t ON t.clientId = c.id AND t.type='purchase'
     WHERE (${q === ""} OR LOWER(c.companyName) LIKE ${like})
     GROUP BY c.id, c.companyName, c.excelClientId
-    HAVING purchaseCount > 0 OR ${q === ""}
+    HAVING COUNT(t.id) > 0 OR ${q === ""}
     ORDER BY purchaseCount DESC, c.companyName ASC
     LIMIT ${limit}
   `);
-  return (res as any)[0] as Array<{
+  return ((res as any).rows ?? res) as Array<{
     id: number;
     companyName: string;
     excelClientId: number | null;
@@ -1202,7 +1196,7 @@ export async function getItemsByClient(clientId: number, search?: string) {
     GROUP BY t.description
     ORDER BY lastPurchaseDate DESC, totalSpent DESC
   `);
-  return (res as any)[0] as Array<{
+  return ((res as any).rows ?? res) as Array<{
     itemName: string;
     factItemId: string | null;
     toolId: number | null;
@@ -1239,7 +1233,7 @@ export async function getItemPurchaseHistory(clientId: number, itemName: string)
       AND t.description = ${itemName}
     ORDER BY t.transactionDate DESC, t.id DESC
   `);
-  return (res as any)[0] as Array<{
+  return ((res as any).rows ?? res) as Array<{
     id: number;
     itemName: string;
     quantity: number;
@@ -1320,7 +1314,7 @@ export async function getOperatingCostSummary() {
 
   // Operating only — by month (UTC)
   const byMonthRes = await d.execute(sql`
-    SELECT DATE_FORMAT(txDate, '%Y-%m') AS month,
+    SELECT TO_CHAR(txDate, 'YYYY-MM') AS month,
            COALESCE(SUM(amount),0) AS total,
            COUNT(*) AS cnt
     FROM operatingCosts
@@ -1338,7 +1332,7 @@ export async function getOperatingCostSummary() {
   // Pivot: category × month
   const pivotRes = await d.execute(sql`
     SELECT category,
-           DATE_FORMAT(txDate, '%Y-%m') AS month,
+           TO_CHAR(txDate, 'YYYY-MM') AS month,
            COALESCE(SUM(amount),0) AS total
     FROM operatingCosts
     WHERE classification = 'operating'
@@ -1384,7 +1378,7 @@ export async function listOperatingCostRows(filters?: {
     where.push(eq(operatingCosts.category, filters.category as OperatingCost["category"]));
   }
   if (filters?.month) {
-    where.push(sql`DATE_FORMAT(${operatingCosts.txDate}, '%Y-%m') = ${filters.month}`);
+    where.push(sql`TO_CHAR(${operatingCosts.txDate}, 'YYYY-MM') = ${filters.month}`);
   }
   if (filters?.search && filters.search.trim()) {
     const q = `%${filters.search.trim()}%`;
@@ -1497,13 +1491,13 @@ async function _getDashboardByPeriodLegacy(filter?: { year?: number; month?: num
   const monthFilter = filter?.month && filter.month >= 1 && filter.month <= 12 ? filter.month : null;
 
   const txWhere: SQL[] = [];
-  if (yearFilter !== null) txWhere.push(sql`YEAR(transactionDate) = ${yearFilter}`);
-  if (monthFilter !== null) txWhere.push(sql`MONTH(transactionDate) = ${monthFilter}`);
+  if (yearFilter !== null) txWhere.push(sql`EXTRACT(YEAR FROM transactionDate) = ${yearFilter}`);
+  if (monthFilter !== null) txWhere.push(sql`EXTRACT(MONTH FROM transactionDate) = ${monthFilter}`);
   const txWhereClause = txWhere.length > 0 ? sql.join([sql`WHERE `, sql.join(txWhere, sql` AND `)]) : sql``;
 
   const ocWhere: SQL[] = [sql`classification = 'operating'`];
-  if (yearFilter !== null) ocWhere.push(sql`YEAR(txDate) = ${yearFilter}`);
-  if (monthFilter !== null) ocWhere.push(sql`MONTH(txDate) = ${monthFilter}`);
+  if (yearFilter !== null) ocWhere.push(sql`EXTRACT(YEAR FROM txDate) = ${yearFilter}`);
+  if (monthFilter !== null) ocWhere.push(sql`EXTRACT(MONTH FROM txDate) = ${monthFilter}`);
   const ocWhereClause = sql.join([sql`WHERE `, sql.join(ocWhere, sql` AND `)]);
 
   // Revenue + COGS by type
@@ -1567,9 +1561,9 @@ async function _getDashboardByPeriodLegacy(filter?: { year?: number; month?: num
 
   // Years available in the dataset (transactions ∪ operatingCosts)
   const yearsRes = await d.execute(sql`
-    SELECT DISTINCT YEAR(transactionDate) AS y FROM transactions WHERE transactionDate IS NOT NULL
+    SELECT DISTINCT EXTRACT(YEAR FROM transactionDate) AS y FROM transactions WHERE transactionDate IS NOT NULL
     UNION
-    SELECT DISTINCT YEAR(txDate) AS y FROM operatingCosts WHERE txDate IS NOT NULL
+    SELECT DISTINCT EXTRACT(YEAR FROM txDate) AS y FROM operatingCosts WHERE txDate IS NOT NULL
     ORDER BY y ASC
   `);
   const yearsRows = (yearsRes as unknown as [Array<{ y: number }>])[0];
@@ -1631,11 +1625,11 @@ export async function getSkuVelocity(opts?: { limit?: number }) {
       COUNT(tx.id) AS lifetimeUnits,
       COALESCE(SUM(tx.amount), 0) AS lifetimeRevenue,
       COALESCE(SUM(tx.cogs), 0) AS lifetimeCogs,
-      COALESCE(SUM(CASE WHEN tx.transactionDate >= (NOW() - INTERVAL 30 DAY) THEN tx.quantity ELSE 0 END), 0) AS units30d,
-      COALESCE(SUM(CASE WHEN tx.transactionDate >= (NOW() - INTERVAL 90 DAY) THEN tx.quantity ELSE 0 END), 0) AS units90d,
-      COALESCE(SUM(CASE WHEN tx.transactionDate >= (NOW() - INTERVAL 365 DAY) THEN tx.quantity ELSE 0 END), 0) AS units365d,
-      COALESCE(SUM(CASE WHEN tx.transactionDate >= (NOW() - INTERVAL 30 DAY) THEN tx.amount ELSE 0 END), 0) AS revenue30d,
-      COALESCE(SUM(CASE WHEN tx.transactionDate >= (NOW() - INTERVAL 90 DAY) THEN tx.amount ELSE 0 END), 0) AS revenue90d,
+      COALESCE(SUM(CASE WHEN tx.transactionDate >= (NOW() - INTERVAL '30 days') THEN tx.quantity ELSE 0 END), 0) AS units30d,
+      COALESCE(SUM(CASE WHEN tx.transactionDate >= (NOW() - INTERVAL '90 days') THEN tx.quantity ELSE 0 END), 0) AS units90d,
+      COALESCE(SUM(CASE WHEN tx.transactionDate >= (NOW() - INTERVAL '365 days') THEN tx.quantity ELSE 0 END), 0) AS units365d,
+      COALESCE(SUM(CASE WHEN tx.transactionDate >= (NOW() - INTERVAL '30 days') THEN tx.amount ELSE 0 END), 0) AS revenue30d,
+      COALESCE(SUM(CASE WHEN tx.transactionDate >= (NOW() - INTERVAL '90 days') THEN tx.amount ELSE 0 END), 0) AS revenue90d,
       MAX(tx.transactionDate) AS lastSoldAt
     FROM tools t
     LEFT JOIN transactions tx
@@ -1645,7 +1639,7 @@ export async function getSkuVelocity(opts?: { limit?: number }) {
     ORDER BY revenue90d DESC, lifetimeRevenue DESC
     LIMIT ${limit}
   `);
-  const rows = (res as any)[0] as Array<{
+  const rows = ((res as any).rows ?? res) as Array<{
     toolId: number;
     toolName: string;
     toolCategory: string | null;
@@ -1865,7 +1859,7 @@ export async function searchInvoices(query: string, opts?: { limit?: number }) {
     LIMIT ${limit}
   `);
 
-  const rows = (res as any)[0] as Array<{
+  const rows = ((res as any).rows ?? res) as Array<{
     invoiceNumber: string;
     clientId: number;
     clientName: string | null;
@@ -1928,7 +1922,7 @@ export async function getInvoiceDetail(invoiceNumber: string) {
     ORDER BY t.amount DESC, t.id ASC
   `);
 
-  const rows = (res as any)[0] as Array<{
+  const rows = ((res as any).rows ?? res) as Array<{
     id: number;
     invoiceNumber: string;
     clientId: number;
@@ -2018,7 +2012,7 @@ export async function getLocalClientTotals() {
     LEFT JOIN transactions t ON t.clientId = c.id
     GROUP BY c.id
   `);
-  const rows = (res as any)[0] as Array<{
+  const rows = ((res as any).rows ?? res) as Array<{
     clientId: number;
     grossBilled: string | number;
     totalCogs: string | number;
