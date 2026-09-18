@@ -7,7 +7,7 @@
 [build.environment]
   NODE_VERSION = "22.22.0"
   NPM_VERSION = "10.9.4"
-  NPM_FLAGS = "--legacy-peer-deps"
+  NPM_FLAGS = "--legacy-peer-deps --omit=optional --no-audit --no-fund"
 
 [[redirects]]
   from = "/*"
