@@ -19,7 +19,6 @@ import {
   SidebarTrigger,
   useSidebar,
 } from "@/components/ui/sidebar";
-import { getLoginUrl } from "@/const";
 import { useIsMobile } from "@/hooks/useMobile";
 import {
   BarChart3,
@@ -66,7 +65,11 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
     const saved = localStorage.getItem(SIDEBAR_WIDTH_KEY);
     return saved ? parseInt(saved, 10) : DEFAULT_WIDTH;
   });
-  const { loading, user } = useAuth();
+  const { loading, user, login } = useAuth();
+  const [loginEmail, setLoginEmail] = useState("");
+  const [loginPassword, setLoginPassword] = useState("");
+  const [loginError, setLoginError] = useState("");
+  const [loginBusy, setLoginBusy] = useState(false);
 
   useEffect(() => {
     localStorage.setItem(SIDEBAR_WIDTH_KEY, sidebarWidth.toString());
@@ -129,15 +132,44 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
               This workspace is restricted to {COMPANY_NAME} team members and approved
               administrators only.
             </p>
-            <Button
-              onClick={() => {
-                window.location.href = getLoginUrl();
+            <form
+              className="space-y-4"
+              onSubmit={async (e) => {
+                e.preventDefault();
+                setLoginError("");
+                setLoginBusy(true);
+                try {
+                  await login(loginEmail, loginPassword);
+                } catch (err) {
+                  setLoginError(err instanceof Error ? err.message : "Sign in failed");
+                } finally {
+                  setLoginBusy(false);
+                }
               }}
-              size="lg"
-              className="w-full h-12 text-base shadow-lg hover:shadow-xl transition-all"
             >
-              Sign in with Manus
-            </Button>
+              <div>
+                <label className="text-sm font-medium">Email</label>
+                <input
+                  type="email" required autoComplete="username" value={loginEmail}
+                  onChange={(e) => setLoginEmail(e.target.value)}
+                  className="mt-1.5 w-full h-12 rounded-md border bg-background px-3 outline-none focus:ring-2 focus:ring-primary/40"
+                  placeholder="you@videamaster.com"
+                />
+              </div>
+              <div>
+                <label className="text-sm font-medium">Password</label>
+                <input
+                  type="password" required autoComplete="current-password" value={loginPassword}
+                  onChange={(e) => setLoginPassword(e.target.value)}
+                  className="mt-1.5 w-full h-12 rounded-md border bg-background px-3 outline-none focus:ring-2 focus:ring-primary/40"
+                  placeholder="••••••••••••"
+                />
+              </div>
+              {loginError && <p className="text-sm text-destructive">{loginError}</p>}
+              <Button type="submit" disabled={loginBusy} size="lg" className="w-full h-12 text-base shadow-lg hover:shadow-xl transition-all">
+                {loginBusy ? "Signing in…" : "Sign in securely"}
+              </Button>
+            </form>
             <p className="mt-10 text-xs text-muted-foreground">
               © {new Date().getFullYear()} {COMPANY_NAME}. All rights reserved.
             </p>
