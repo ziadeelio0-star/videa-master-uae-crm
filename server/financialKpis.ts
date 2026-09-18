@@ -85,16 +85,16 @@ export async function getFinancialKpis(filter?: {
       : null;
 
   const txWhere: SQL[] = [];
-  if (yearFilter !== null) txWhere.push(sql`YEAR(transactionDate) = ${yearFilter}`);
-  if (monthFilter !== null) txWhere.push(sql`MONTH(transactionDate) = ${monthFilter}`);
+  if (yearFilter !== null) txWhere.push(sql`EXTRACT(YEAR FROM transactionDate) = ${yearFilter}`);
+  if (monthFilter !== null) txWhere.push(sql`EXTRACT(MONTH FROM transactionDate) = ${monthFilter}`);
   const txWhereClause =
     txWhere.length > 0
       ? sql.join([sql`WHERE `, sql.join(txWhere, sql` AND `)])
       : sql``;
 
   const ocWhere: SQL[] = [sql`classification = 'operating'`];
-  if (yearFilter !== null) ocWhere.push(sql`YEAR(txDate) = ${yearFilter}`);
-  if (monthFilter !== null) ocWhere.push(sql`MONTH(txDate) = ${monthFilter}`);
+  if (yearFilter !== null) ocWhere.push(sql`EXTRACT(YEAR FROM txDate) = ${yearFilter}`);
+  if (monthFilter !== null) ocWhere.push(sql`EXTRACT(MONTH FROM txDate) = ${monthFilter}`);
   const ocWhereClause = sql.join([sql`WHERE `, sql.join(ocWhere, sql` AND `)]);
 
   // 1. Revenue + COGS by transaction type (Tools vs Sharpening). We sum BOTH
@@ -109,9 +109,7 @@ export async function getFinancialKpis(filter?: {
     ${txWhereClause}
     GROUP BY type
   `);
-  const txRows = (txRes as unknown as [
-    Array<{ type: string; revenue: string | number; cogs: string | number; cnt: number }>,
-  ])[0];
+  const txRows = (((txRes as any).rows ?? []) as Array<{ type: string; revenue: string | number; cogs: string | number; cnt: number }>);
 
   let toolsRevenue = 0;
   let sharpeningRevenue = 0;
@@ -150,7 +148,7 @@ export async function getFinancialKpis(filter?: {
     FROM transactions
     ${txWhereClause}
   `);
-  const invRows = (invRes as unknown as [Array<{ cnt: number }>])[0];
+  const invRows = (((invRes as any).rows ?? []) as Array<{ cnt: number }>);
   const invoiceCount = invRows.length > 0 ? Number(invRows[0]!.cnt) : 0;
 
   // 3. Operating cost over the period (operating-classification only — never
@@ -160,7 +158,7 @@ export async function getFinancialKpis(filter?: {
     FROM operatingCosts
     ${ocWhereClause}
   `);
-  const opRows = (opRes as unknown as [Array<{ total: string | number }>])[0];
+  const opRows = (((opRes as any).rows ?? []) as Array<{ total: string | number }>);
   const operatingCost =
     opRows.length > 0 ? round2(Number(opRows[0]!.total)) : 0;
   const netProfit = round2(grossProfit - operatingCost);
@@ -177,16 +175,14 @@ export async function getFinancialKpis(filter?: {
     SELECT COALESCE(SUM(CAST(outstandingBalance AS DECIMAL(14,2))), 0) AS total
     FROM clients
   `);
-  const outRows = (outRes as unknown as [Array<{ total: string | number }>])[0];
+  const outRows = (((outRes as any).rows ?? []) as Array<{ total: string | number }>);
   const outstanding =
     outRows.length > 0 ? round2(Math.max(0, Number(outRows[0]!.total))) : 0;
 
   const allTimeRevRes = await d.execute(sql`
     SELECT COALESCE(SUM(amount), 0) AS total FROM transactions
   `);
-  const allTimeRevRows = (allTimeRevRes as unknown as [
-    Array<{ total: string | number }>,
-  ])[0];
+  const allTimeRevRows = (((allTimeRevRes as any).rows ?? []) as Array<{ total: string | number }>);
   const allTimeRevenue =
     allTimeRevRows.length > 0 ? round2(Number(allTimeRevRows[0]!.total)) : 0;
   const collected = round2(Math.max(0, allTimeRevenue - outstanding));
@@ -200,12 +196,12 @@ export async function getFinancialKpis(filter?: {
 
   // 5. Years available in the dataset for the UI selector.
   const yearsRes = await d.execute(sql`
-    SELECT DISTINCT YEAR(transactionDate) AS y FROM transactions WHERE transactionDate IS NOT NULL
+    SELECT DISTINCT EXTRACT(YEAR FROM transactionDate) AS y FROM transactions WHERE transactionDate IS NOT NULL
     UNION
-    SELECT DISTINCT YEAR(txDate) AS y FROM operatingCosts WHERE txDate IS NOT NULL
+    SELECT DISTINCT EXTRACT(YEAR FROM txDate) AS y FROM operatingCosts WHERE txDate IS NOT NULL
     ORDER BY y ASC
   `);
-  const yearsRows = (yearsRes as unknown as [Array<{ y: number }>])[0];
+  const yearsRows = (((yearsRes as any).rows ?? []) as Array<{ y: number }>);
   const availableYears = yearsRows
     .map((r) => Number(r.y))
     .filter((y) => y > 0);
@@ -254,15 +250,15 @@ export async function getDashboardKpisV2Unified() {
     };
   }
   const activeClientsRes = await db.execute(sql`SELECT COUNT(*) AS count FROM clients`);
-  const activeClients = Number((activeClientsRes as any)[0]?.[0]?.count ?? 0);
+  const activeClients = Number((activeClientsRes as any).rows?.[0]?.count ?? 0);
 
   // Current calendar-month revenue (kept for the legacy "monthly revenue" chip).
   const monthlyRes = await db.execute(sql`
     SELECT COALESCE(SUM(amount), 0) AS total
     FROM transactions
-    WHERE DATE_FORMAT(transactionDate, '%Y-%m') = DATE_FORMAT(NOW(), '%Y-%m')
+    WHERE TO_CHAR(transactionDate, 'YYYY-MM') = TO_CHAR(NOW(), 'YYYY-MM')
   `);
-  const monthlyRevenue = Number((monthlyRes as any)[0]?.[0]?.total ?? 0);
+  const monthlyRevenue = Number((monthlyRes as any).rows?.[0]?.total ?? 0);
 
   return {
     totalRevenue: k.totalRevenue,
