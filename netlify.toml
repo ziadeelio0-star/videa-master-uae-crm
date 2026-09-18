@@ -1,4 +1,4 @@
-# Netlify Database production migration
+# Netlify Database production migration - npm compatibility
 [build]
   command = "vite build"
   publish = "dist/public"
