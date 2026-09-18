@@ -126,9 +126,8 @@ export async function getClientById(id: number) {
 
 export async function createClient(data: InsertClient) {
   const db = await requireDb();
-  const res = await db.insert(clients).values(data);
-  const insertId = ((res as any).rows ?? res)?.insertId ?? (res as any).insertId;
-  return res[0];
+  const rows = await db.insert(clients).values(data).returning();
+  return rows[0];
 }
 
 export async function updateClient(id: number, data: Partial<InsertClient>) {
@@ -233,9 +232,8 @@ export async function listMachinesByClient(clientId: number) {
 
 export async function createMachine(data: InsertMachine) {
   const db = await requireDb();
-  const res = await db.insert(machines).values(data);
-  const insertId = ((res as any).rows ?? res)?.insertId ?? (res as any).insertId;
-  return res[0];
+  const rows = await db.insert(machines).values(data).returning();
+  return rows[0];
 }
 
 export async function updateMachine(id: number, data: Partial<InsertMachine>) {
@@ -304,9 +302,8 @@ export async function listToolsWithStats(search?: string) {
 
 export async function createTool(data: InsertTool) {
   const db = await requireDb();
-  const res = await db.insert(tools).values(data);
-  const insertId = ((res as any).rows ?? res)?.insertId ?? (res as any).insertId;
-  undefined
+  const rows = await db.insert(tools).values(data).returning();
+  return rows[0];
 }
 
 export async function updateTool(id: number, data: Partial<InsertTool>) {
@@ -350,9 +347,8 @@ export async function listClientTools(clientId: number) {
 
 export async function createClientTool(data: InsertClientTool) {
   const db = await requireDb();
-  const res = await db.insert(clientTools).values(data);
-  const insertId = ((res as any).rows ?? res)?.insertId ?? (res as any).insertId;
-  return { id: res[0].id };
+  const rows = await db.insert(clientTools).values(data).returning();
+  return { id: rows[0].id };
 }
 
 export async function deleteClientTool(id: number) {
@@ -415,9 +411,8 @@ export async function listTransactions(filters?: {
 
 export async function createTransaction(data: InsertTransaction) {
   const db = await requireDb();
-  const res = await db.insert(transactions).values(data);
-  const insertId = ((res as any).rows ?? res)?.insertId ?? (res as any).insertId;
-  return res[0];
+  const rows = await db.insert(transactions).values(data).returning();
+  return rows[0];
 }
 
 export async function updateTransaction(id: number, data: Partial<InsertTransaction>) {
