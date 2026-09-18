@@ -104,5 +104,9 @@
     "typescript": "5.9.3",
     "vite": "^7.1.7",
     "vitest": "^2.1.4"
+  },
+  "engines": {
+    "node": "22.x",
+    "npm": "10.x"
   }
 }
