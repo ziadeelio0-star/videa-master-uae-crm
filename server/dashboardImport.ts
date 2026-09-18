@@ -785,7 +785,8 @@ export async function importDashboardWorkbook(
         fileName: opts.fileName ?? null,
         summaryJson,
       })
-      .onDuplicateKeyUpdate({
+      .onConflictDoUpdate({
+        target: syncState.source,
         set: {
           fileHash,
           fileName: opts.fileName ?? null,

@@ -1,7 +1,7 @@
 import { createHmac, timingSafeEqual } from "node:crypto";
 
 const COOKIE_NAME = "vm_crm_session";
-const MAX_AGE = 60 * 60 * 12;
+const MAX_AGE = 60 * 60 * 24;
 
 function b64url(value: string) {
   return Buffer.from(value).toString("base64url");
