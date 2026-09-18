@@ -1,5 +1,6 @@
 import { and, desc, eq, like, or, sql, sum, count, SQL, isNotNull, ne, gt } from "drizzle-orm";
-import { drizzle } from "drizzle-orm/netlify-db";
+import { drizzle } from "drizzle-orm/node-postgres";
+import pg from "pg";
 import * as schema from "../drizzle/schema";
 import {
   InsertUser,
@@ -20,10 +21,18 @@ import {
 import { ENV } from "./_core/env";
 
 let _db: ReturnType<typeof drizzle> | null = null;
+let _pool: pg.Pool | null = null;
 export async function getDb() {
   if (!_db) {
-    try { _db = drizzle({ schema }); }
-    catch (error) { console.warn("[Database] Failed to connect:", error); _db = null; }
+    try {
+      const connectionString = process.env.NETLIFY_DATABASE_URL || process.env.DATABASE_URL;
+      if (!connectionString) throw new Error("Database connection URL is not configured");
+      _pool = new pg.Pool({ connectionString });
+      _db = drizzle(_pool, { schema });
+    } catch (error) {
+      console.warn("[Database] Failed to connect:", error);
+      _db = null;
+    }
   }
   return _db;
 }
