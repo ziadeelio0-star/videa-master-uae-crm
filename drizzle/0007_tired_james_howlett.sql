@@ -1,0 +1,1 @@
+ALTER TABLE `transactions` ADD `cogs` decimal(12,2) DEFAULT '0' NOT NULL;

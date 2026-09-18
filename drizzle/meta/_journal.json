@@ -1,0 +1,111 @@
+{
+  "version": "7",
+  "dialect": "mysql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1777521082613,
+      "tag": "0000_cynical_mentallo",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1777521810325,
+      "tag": "0001_wooden_penance",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1777522822341,
+      "tag": "0002_classy_xavin",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "5",
+      "when": 1777531952471,
+      "tag": "0003_violet_the_initiative",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "5",
+      "when": 1777535936493,
+      "tag": "0004_rapid_lester",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "5",
+      "when": 1778047425276,
+      "tag": "0005_stormy_white_tiger",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "5",
+      "when": 1778048001442,
+      "tag": "0006_square_susan_delgado",
+      "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "5",
+      "when": 1778061527480,
+      "tag": "0007_tired_james_howlett",
+      "breakpoints": true
+    },
+    {
+      "idx": 8,
+      "version": "5",
+      "when": 1778065166483,
+      "tag": "0008_powerful_raider",
+      "breakpoints": true
+    },
+    {
+      "idx": 9,
+      "version": "5",
+      "when": 1778068045766,
+      "tag": "0009_abandoned_roulette",
+      "breakpoints": true
+    },
+    {
+      "idx": 10,
+      "version": "5",
+      "when": 1778069476963,
+      "tag": "0010_familiar_slipstream",
+      "breakpoints": true
+    },
+    {
+      "idx": 11,
+      "version": "5",
+      "when": 1778073858016,
+      "tag": "0011_swift_smasher",
+      "breakpoints": true
+    },
+    {
+      "idx": 12,
+      "version": "5",
+      "when": 1778132245567,
+      "tag": "0012_brainy_lady_deathstrike",
+      "breakpoints": true
+    },
+    {
+      "idx": 13,
+      "version": "5",
+      "when": 1778133623555,
+      "tag": "0013_next_mystique",
+      "breakpoints": true
+    },
+    {
+      "idx": 14,
+      "version": "5",
+      "when": 1778143164628,
+      "tag": "0014_oval_sharon_carter",
+      "breakpoints": true
+    }
+  ]
+}
